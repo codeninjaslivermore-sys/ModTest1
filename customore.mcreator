@@ -143,11 +143,11 @@
       "registry_name": "raw_crystal_block",
       "metadata": {
         "files": [
-          "src/main/resources/assets/customore/models/item/raw_crystal_block.json",
-          "src/main/resources/assets/customore/items/raw_crystal_block.json",
-          "src/main/resources/assets/customore/blockstates/raw_crystal_block.json",
-          "src/main/java/net/mcreator/customore/block/RawCrystalBlockBlock.java",
           "src/main/resources/data/customore/loot_table/blocks/raw_crystal_block.json",
+          "src/main/java/net/mcreator/customore/block/RawCrystalBlockBlock.java",
+          "src/main/resources/assets/customore/items/raw_crystal_block.json",
+          "src/main/resources/assets/customore/models/item/raw_crystal_block.json",
+          "src/main/resources/assets/customore/blockstates/raw_crystal_block.json",
           "src/main/resources/assets/customore/models/block/raw_crystal_block.json"
         ]
       }
@@ -355,8 +355,8 @@
       "metadata": {
         "files": [
           "src/main/resources/data/customore/worldgen/configured_feature/crystal_biome_tree.json",
-          "src/main/resources/data/customore/worldgen/biome/crystal_biome.json",
-          "src/main/resources/data/customore/worldgen/placed_feature/crystal_biome_tree.json"
+          "src/main/resources/data/customore/worldgen/placed_feature/crystal_biome_tree.json",
+          "src/main/resources/data/customore/worldgen/biome/crystal_biome.json"
         ]
       }
     }
@@ -441,19 +441,19 @@
   },
   "metadata": {
     "files": [
-      "src/main/java/net/mcreator/customore/mixin/NoiseGeneratorSettingsMixin.java",
       "src/main/java/net/mcreator/customore/mixin/BiomeSourcePresetMixin.java",
       "src/main/java/net/mcreator/customore/mixin/LevelStorageSourceMixin.java",
+      "src/main/java/net/mcreator/customore/mixin/NoiseGeneratorSettingsMixin.java",
       "src/main/java/net/mcreator/customore/init/CustomoreModBiomes.java",
       "src/main/java/net/mcreator/customore/init/CustomoreModMobEffects.java",
       "src/main/java/net/mcreator/customore/init/CustomoreModPotions.java",
       "src/main/java/net/mcreator/customore/init/CustomoreModBlocks.java",
       "src/main/java/net/mcreator/customore/init/CustomoreModItems.java",
-      "src/main/resources/pack.mcmeta",
-      "src/main/java/net/mcreator/customore/CustomoreMod.java",
-      "src/main/resources/META-INF/accesstransformer.cfg",
       "src/main/resources/customore.mixins.json",
+      "src/main/resources/META-INF/accesstransformer.cfg",
+      "src/main/resources/pack.mcmeta",
       "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/java/net/mcreator/customore/CustomoreMod.java",
       "src/main/java/net/mcreator/customore/init/CustomoreModTabs.java"
     ]
   },
