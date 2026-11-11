@@ -1,0 +1,21 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smelting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [
+      "CUSTOM:RawCrystal"
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 20.0,
+    "cookingTime": 40,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "smeltingInputStack": "CUSTOM:RawCrystal",
+    "smeltingReturnStack": "CUSTOM:RefinedCrystal",
+    "name": "refine_crystal_smelter",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "stats": {
+    "minecraft:picked_up": {
+      "minecraft:cobblestone": 16
+    },
+    "minecraft:dropped": {
+      "minecraft:potion": 1
+    },
+    "minecraft:used": {
+      "customore:refined_crystal": 3,
+      "minecraft:purple_stained_glass": 2,
+      "minecraft:potion": 3,
+      "minecraft:bow": 3
+    },
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 75110,
+      "minecraft:walk_one_cm": 3073,
+      "minecraft:walk_under_water_one_cm": 1082,
+      "minecraft:play_time": 37555,
+      "minecraft:jump": 30,
+      "minecraft:time_since_death": 37555,
+      "minecraft:aviate_one_cm": 7486,
+      "minecraft:drop": 1,
+      "minecraft:total_world_time": 38358,
+      "minecraft:fly_one_cm": 81823,
+      "minecraft:walk_on_water_one_cm": 4121,
+      "minecraft:crouch_one_cm": 11,
+      "minecraft:sneak_time": 54
+    }
+  },
+  "DataVersion": 4790
+}

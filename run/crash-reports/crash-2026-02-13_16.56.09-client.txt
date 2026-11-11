@@ -1,0 +1,944 @@
+---- Minecraft Crash Report ----
+// Hi. I'm Minecraft, and I'm a crashaholic.
+
+Time: 2026-02-13 16:56:21
+Description: Client shutdown
+
+java.lang.Error: Watchdog
+	at MC-BOOTSTRAP/org.lwjgl.opengl@3.3.3+5/org.lwjgl.opengl.GL32C.glFenceSync(Native Method) ~[lwjgl-opengl-3.3.3.jar:build 5] {}
+	at MC-BOOTSTRAP/org.lwjgl.opengl@3.3.3+5/org.lwjgl.opengl.GL32.glFenceSync(GL32.java:642) ~[lwjgl-opengl-3.3.3.jar:build 5] {}
+	at TRANSFORMER/minecraft@1.21.8/com.mojang.blaze3d.opengl.GlStateManager._glFenceSync(GlStateManager.java:553) ~[neoforge-21.8.31.jar:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.8/com.mojang.blaze3d.opengl.GlFence.<init>(GlFence.java:9) ~[neoforge-21.8.31.jar:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.8/com.mojang.blaze3d.opengl.GlCommandEncoder.createFence(GlCommandEncoder.java:748) ~[neoforge-21.8.31.jar:?] {re:classloading}
+	at TRANSFORMER/neoforge@21.8.31/net.neoforged.neoforge.client.blaze3d.validation.ValidationCommandEncoder.createFence(ValidationCommandEncoder.java:192) ~[neoforge-21.8.31.jar:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.client.renderer.MappableRingBuffer.rotate(MappableRingBuffer.java:54) ~[neoforge-21.8.31.jar:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.client.renderer.DynamicUniformStorage.endFrame(DynamicUniformStorage.java:41) ~[neoforge-21.8.31.jar:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.client.renderer.DynamicUniforms.reset(DynamicUniforms.java:23) ~[neoforge-21.8.31.jar:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.8/com.mojang.blaze3d.systems.RenderSystem.flipFrame(RenderSystem.java:147) ~[neoforge-21.8.31.jar:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.8/com.mojang.blaze3d.platform.Window.updateDisplay(Window.java:302) ~[neoforge-21.8.31.jar:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.client.Minecraft.runTick(Minecraft.java:1306) ~[neoforge-21.8.31.jar:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.client.Minecraft.disconnect(Minecraft.java:2159) ~[neoforge-21.8.31.jar:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.client.Minecraft.disconnectWithSavingScreen(Minecraft.java:2119) ~[neoforge-21.8.31.jar:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.client.gui.screens.PauseScreen.disconnectFromWorld(PauseScreen.java:178) ~[neoforge-21.8.31.jar:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.client.gui.screens.PauseScreen.lambda$createPauseMenu$7(PauseScreen.java:119) ~[neoforge-21.8.31.jar:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.client.gui.screens.PauseScreen$$Lambda/0x000001a013889cf0.run(Unknown Source) ~[?:?] {}
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.client.multiplayer.chat.report.ReportingContext.draftReportHandled(ReportingContext.java:56) ~[neoforge-21.8.31.jar:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.client.gui.screens.PauseScreen.lambda$createPauseMenu$8(PauseScreen.java:119) ~[neoforge-21.8.31.jar:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.client.gui.screens.PauseScreen$$Lambda/0x000001a013882ec8.onPress(Unknown Source) ~[?:?] {}
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.client.gui.components.Button.onPress(Button.java:41) ~[neoforge-21.8.31.jar:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.client.gui.components.AbstractButton.onClick(AbstractButton.java:51) ~[neoforge-21.8.31.jar:?] {re:classloading,pl:accesstransformer:B}
+	at TRANSFORMER/neoforge@21.8.31/net.neoforged.neoforge.client.extensions.IAbstractWidgetExtension.onClick(IAbstractWidgetExtension.java:36) ~[neoforge-21.8.31.jar:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.client.gui.components.AbstractWidget.mouseClicked(AbstractWidget.java:135) ~[neoforge-21.8.31.jar:?] {re:classloading,pl:accesstransformer:B}
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.client.gui.components.events.ContainerEventHandler.mouseClicked(ContainerEventHandler.java:44) ~[neoforge-21.8.31.jar:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.client.MouseHandler.onPress(MouseHandler.java:110) ~[neoforge-21.8.31.jar:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.client.MouseHandler.lambda$setup$4(MouseHandler.java:249) ~[neoforge-21.8.31.jar:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.client.MouseHandler$$Lambda/0x000001a01337fbf8.run(Unknown Source) ~[?:?] {}
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.util.thread.BlockableEventLoop.execute(BlockableEventLoop.java:102) ~[neoforge-21.8.31.jar:?] {re:classloading,pl:accesstransformer:B}
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.client.MouseHandler.lambda$setup$5(MouseHandler.java:249) ~[neoforge-21.8.31.jar:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.client.MouseHandler$$Lambda/0x000001a0131931a0.invoke(Unknown Source) ~[?:?] {}
+	at MC-BOOTSTRAP/org.lwjgl.glfw@3.3.3+5/org.lwjgl.glfw.GLFWMouseButtonCallbackI.callback(GLFWMouseButtonCallbackI.java:43) ~[lwjgl-glfw-3.3.3.jar:build 5] {}
+	at MC-BOOTSTRAP/org.lwjgl@3.3.3+5/org.lwjgl.system.JNI.invokeV(Native Method) ~[lwjgl-3.3.3.jar:build 5] {}
+	at MC-BOOTSTRAP/org.lwjgl.glfw@3.3.3+5/org.lwjgl.glfw.GLFW.glfwPollEvents(GLFW.java:3438) ~[lwjgl-glfw-3.3.3.jar:build 5] {}
+	at TRANSFORMER/minecraft@1.21.8/com.mojang.blaze3d.systems.RenderSystem.pollEvents(RenderSystem.java:131) ~[neoforge-21.8.31.jar:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.8/com.mojang.blaze3d.systems.RenderSystem.flipFrame(RenderSystem.java:140) ~[neoforge-21.8.31.jar:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.8/com.mojang.blaze3d.platform.Window.updateDisplay(Window.java:302) ~[neoforge-21.8.31.jar:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.client.Minecraft.runTick(Minecraft.java:1306) ~[neoforge-21.8.31.jar:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.client.Minecraft.run(Minecraft.java:882) ~[neoforge-21.8.31.jar:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.client.main.Main.main(Main.java:243) ~[neoforge-21.8.31.jar:?] {re:classloading}
+	at java.base/java.lang.invoke.LambdaForm$DMH/0x000001a012002400.invokeStatic(LambdaForm$DMH) ~[?:?] {}
+	at java.base/java.lang.invoke.LambdaForm$MH/0x000001a012087000.invoke(LambdaForm$MH) ~[?:?] {}
+	at java.base/java.lang.invoke.Invokers$Holder.invokeExact_MT(Invokers$Holder) ~[?:?] {}
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invokeImpl(DirectMethodHandleAccessor.java:154) ~[?:?] {}
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?] {}
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?] {}
+	at MC-BOOTSTRAP/fml_loader@9.0.16/net.neoforged.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:132) ~[loader-9.0.16.jar:9.0] {}
+	at MC-BOOTSTRAP/fml_loader@9.0.16/net.neoforged.fml.loading.targets.CommonLaunchHandler.clientService(CommonLaunchHandler.java:120) ~[loader-9.0.16.jar:9.0] {}
+	at MC-BOOTSTRAP/fml_loader@9.0.16/net.neoforged.fml.loading.targets.NeoForgeClientDevLaunchHandler.runService(NeoForgeClientDevLaunchHandler.java:49) ~[loader-9.0.16.jar:9.0] {}
+	at MC-BOOTSTRAP/fml_loader@9.0.16/net.neoforged.fml.loading.targets.CommonLaunchHandler.lambda$launchService$4(CommonLaunchHandler.java:114) ~[loader-9.0.16.jar:9.0] {}
+	at MC-BOOTSTRAP/fml_loader@9.0.16/net.neoforged.fml.loading.targets.CommonLaunchHandler$$Lambda/0x000001a01236f828.run(Unknown Source) ~[?:?] {}
+	at MC-BOOTSTRAP/fml_loader@9.0.16/cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:25) ~[loader-9.0.16.jar:9.0] {}
+	at MC-BOOTSTRAP/fml_loader@9.0.16/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:55) ~[loader-9.0.16.jar:9.0] {}
+	at MC-BOOTSTRAP/fml_loader@9.0.16/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:73) ~[loader-9.0.16.jar:9.0] {}
+	at MC-BOOTSTRAP/fml_loader@9.0.16/cpw.mods.modlauncher.Launcher.run(Launcher.java:104) ~[loader-9.0.16.jar:9.0] {}
+	at MC-BOOTSTRAP/fml_loader@9.0.16/cpw.mods.modlauncher.Launcher.main(Launcher.java:75) ~[loader-9.0.16.jar:9.0] {}
+	at java.base/java.lang.invoke.LambdaForm$DMH/0x000001a012002400.invokeStatic(LambdaForm$DMH) ~[?:?] {}
+	at java.base/java.lang.invoke.LambdaForm$MH/0x000001a012087000.invoke(LambdaForm$MH) ~[?:?] {}
+	at java.base/java.lang.invoke.Invokers$Holder.invokeExact_MT(Invokers$Holder) ~[?:?] {}
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invokeImpl(DirectMethodHandleAccessor.java:154) ~[?:?] {}
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?] {}
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?] {}
+	at cpw.mods.bootstraplauncher/cpw.mods.bootstraplauncher.BootstrapLauncher.run(BootstrapLauncher.java:203) ~[bootstraplauncher-9.0.16.jar:?] {}
+	at cpw.mods.bootstraplauncher/cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:62) ~[bootstraplauncher-9.0.16.jar:?] {}
+	at java.base/java.lang.invoke.LambdaForm$DMH/0x000001a012002400.invokeStatic(LambdaForm$DMH) ~[?:?] {}
+	at java.base/java.lang.invoke.LambdaForm$MH/0x000001a012087000.invoke(LambdaForm$MH) ~[?:?] {}
+	at java.base/java.lang.invoke.Invokers$Holder.invokeExact_MT(Invokers$Holder) ~[?:?] {}
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invokeImpl(DirectMethodHandleAccessor.java:154) ~[?:?] {}
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?] {}
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?] {}
+	at net.neoforged.devlaunch.Main.main(Main.java:57) ~[?:?] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Client shutdown watchdog
+Stacktrace:
+	at MC-BOOTSTRAP/org.lwjgl.opengl@3.3.3+5/org.lwjgl.opengl.GL32C.glFenceSync(Native Method) ~[lwjgl-opengl-3.3.3.jar:build 5] {}
+	at MC-BOOTSTRAP/org.lwjgl.opengl@3.3.3+5/org.lwjgl.opengl.GL32.glFenceSync(GL32.java:642) ~[lwjgl-opengl-3.3.3.jar:build 5] {}
+	at TRANSFORMER/minecraft@1.21.8/com.mojang.blaze3d.opengl.GlStateManager._glFenceSync(GlStateManager.java:553) ~[neoforge-21.8.31.jar:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.8/com.mojang.blaze3d.opengl.GlFence.<init>(GlFence.java:9) ~[neoforge-21.8.31.jar:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.8/com.mojang.blaze3d.opengl.GlCommandEncoder.createFence(GlCommandEncoder.java:748) ~[neoforge-21.8.31.jar:?] {re:classloading}
+	at TRANSFORMER/neoforge@21.8.31/net.neoforged.neoforge.client.blaze3d.validation.ValidationCommandEncoder.createFence(ValidationCommandEncoder.java:192) ~[neoforge-21.8.31.jar:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.client.renderer.MappableRingBuffer.rotate(MappableRingBuffer.java:54) ~[neoforge-21.8.31.jar:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.client.renderer.DynamicUniformStorage.endFrame(DynamicUniformStorage.java:41) ~[neoforge-21.8.31.jar:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.client.renderer.DynamicUniforms.reset(DynamicUniforms.java:23) ~[neoforge-21.8.31.jar:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.8/com.mojang.blaze3d.systems.RenderSystem.flipFrame(RenderSystem.java:147) ~[neoforge-21.8.31.jar:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.8/com.mojang.blaze3d.platform.Window.updateDisplay(Window.java:302) ~[neoforge-21.8.31.jar:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.client.Minecraft.runTick(Minecraft.java:1306) ~[neoforge-21.8.31.jar:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.client.Minecraft.disconnect(Minecraft.java:2159) ~[neoforge-21.8.31.jar:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.client.Minecraft.disconnectWithSavingScreen(Minecraft.java:2119) ~[neoforge-21.8.31.jar:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.client.gui.screens.PauseScreen.disconnectFromWorld(PauseScreen.java:178) ~[neoforge-21.8.31.jar:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.client.gui.screens.PauseScreen.lambda$createPauseMenu$7(PauseScreen.java:119) ~[neoforge-21.8.31.jar:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.client.gui.screens.PauseScreen$$Lambda/0x000001a013889cf0.run(Unknown Source) ~[?:?] {}
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.client.multiplayer.chat.report.ReportingContext.draftReportHandled(ReportingContext.java:56) ~[neoforge-21.8.31.jar:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.client.gui.screens.PauseScreen.lambda$createPauseMenu$8(PauseScreen.java:119) ~[neoforge-21.8.31.jar:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.client.gui.screens.PauseScreen$$Lambda/0x000001a013882ec8.onPress(Unknown Source) ~[?:?] {}
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.client.gui.components.Button.onPress(Button.java:41) ~[neoforge-21.8.31.jar:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.client.gui.components.AbstractButton.onClick(AbstractButton.java:51) ~[neoforge-21.8.31.jar:?] {re:classloading,pl:accesstransformer:B}
+	at TRANSFORMER/neoforge@21.8.31/net.neoforged.neoforge.client.extensions.IAbstractWidgetExtension.onClick(IAbstractWidgetExtension.java:36) ~[neoforge-21.8.31.jar:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.client.gui.components.AbstractWidget.mouseClicked(AbstractWidget.java:135) ~[neoforge-21.8.31.jar:?] {re:classloading,pl:accesstransformer:B}
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.client.gui.components.events.ContainerEventHandler.mouseClicked(ContainerEventHandler.java:44) ~[neoforge-21.8.31.jar:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.client.MouseHandler.onPress(MouseHandler.java:110) ~[neoforge-21.8.31.jar:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.client.MouseHandler.lambda$setup$4(MouseHandler.java:249) ~[neoforge-21.8.31.jar:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.client.MouseHandler$$Lambda/0x000001a01337fbf8.run(Unknown Source) ~[?:?] {}
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.util.thread.BlockableEventLoop.execute(BlockableEventLoop.java:102) ~[neoforge-21.8.31.jar:?] {re:classloading,pl:accesstransformer:B}
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.client.MouseHandler.lambda$setup$5(MouseHandler.java:249) ~[neoforge-21.8.31.jar:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.client.MouseHandler$$Lambda/0x000001a0131931a0.invoke(Unknown Source) ~[?:?] {}
+	at MC-BOOTSTRAP/org.lwjgl.glfw@3.3.3+5/org.lwjgl.glfw.GLFWMouseButtonCallbackI.callback(GLFWMouseButtonCallbackI.java:43) ~[lwjgl-glfw-3.3.3.jar:build 5] {}
+	at MC-BOOTSTRAP/org.lwjgl@3.3.3+5/org.lwjgl.system.JNI.invokeV(Native Method) ~[lwjgl-3.3.3.jar:build 5] {}
+	at MC-BOOTSTRAP/org.lwjgl.glfw@3.3.3+5/org.lwjgl.glfw.GLFW.glfwPollEvents(GLFW.java:3438) ~[lwjgl-glfw-3.3.3.jar:build 5] {}
+	at TRANSFORMER/minecraft@1.21.8/com.mojang.blaze3d.systems.RenderSystem.pollEvents(RenderSystem.java:131) ~[neoforge-21.8.31.jar:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.8/com.mojang.blaze3d.systems.RenderSystem.flipFrame(RenderSystem.java:140) ~[neoforge-21.8.31.jar:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.8/com.mojang.blaze3d.platform.Window.updateDisplay(Window.java:302) ~[neoforge-21.8.31.jar:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.client.Minecraft.runTick(Minecraft.java:1306) ~[neoforge-21.8.31.jar:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.client.Minecraft.run(Minecraft.java:882) ~[neoforge-21.8.31.jar:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.client.main.Main.main(Main.java:243) ~[neoforge-21.8.31.jar:?] {re:classloading}
+	at java.base/java.lang.invoke.LambdaForm$DMH/0x000001a012002400.invokeStatic(LambdaForm$DMH) ~[?:?] {}
+	at java.base/java.lang.invoke.LambdaForm$MH/0x000001a012087000.invoke(LambdaForm$MH) ~[?:?] {}
+	at java.base/java.lang.invoke.Invokers$Holder.invokeExact_MT(Invokers$Holder) ~[?:?] {}
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invokeImpl(DirectMethodHandleAccessor.java:154) ~[?:?] {}
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?] {}
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?] {}
+	at MC-BOOTSTRAP/fml_loader@9.0.16/net.neoforged.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:132) ~[loader-9.0.16.jar:9.0] {}
+	at MC-BOOTSTRAP/fml_loader@9.0.16/net.neoforged.fml.loading.targets.CommonLaunchHandler.clientService(CommonLaunchHandler.java:120) ~[loader-9.0.16.jar:9.0] {}
+	at MC-BOOTSTRAP/fml_loader@9.0.16/net.neoforged.fml.loading.targets.NeoForgeClientDevLaunchHandler.runService(NeoForgeClientDevLaunchHandler.java:49) ~[loader-9.0.16.jar:9.0] {}
+	at MC-BOOTSTRAP/fml_loader@9.0.16/net.neoforged.fml.loading.targets.CommonLaunchHandler.lambda$launchService$4(CommonLaunchHandler.java:114) ~[loader-9.0.16.jar:9.0] {}
+	at MC-BOOTSTRAP/fml_loader@9.0.16/net.neoforged.fml.loading.targets.CommonLaunchHandler$$Lambda/0x000001a01236f828.run(Unknown Source) ~[?:?] {}
+	at MC-BOOTSTRAP/fml_loader@9.0.16/cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:25) ~[loader-9.0.16.jar:9.0] {}
+	at MC-BOOTSTRAP/fml_loader@9.0.16/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:55) ~[loader-9.0.16.jar:9.0] {}
+	at MC-BOOTSTRAP/fml_loader@9.0.16/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:73) ~[loader-9.0.16.jar:9.0] {}
+	at MC-BOOTSTRAP/fml_loader@9.0.16/cpw.mods.modlauncher.Launcher.run(Launcher.java:104) ~[loader-9.0.16.jar:9.0] {}
+	at MC-BOOTSTRAP/fml_loader@9.0.16/cpw.mods.modlauncher.Launcher.main(Launcher.java:75) ~[loader-9.0.16.jar:9.0] {}
+	at java.base/java.lang.invoke.LambdaForm$DMH/0x000001a012002400.invokeStatic(LambdaForm$DMH) ~[?:?] {}
+	at java.base/java.lang.invoke.LambdaForm$MH/0x000001a012087000.invoke(LambdaForm$MH) ~[?:?] {}
+	at java.base/java.lang.invoke.Invokers$Holder.invokeExact_MT(Invokers$Holder) ~[?:?] {}
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invokeImpl(DirectMethodHandleAccessor.java:154) ~[?:?] {}
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?] {}
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?] {}
+	at cpw.mods.bootstraplauncher/cpw.mods.bootstraplauncher.BootstrapLauncher.run(BootstrapLauncher.java:203) ~[bootstraplauncher-9.0.16.jar:?] {}
+	at cpw.mods.bootstraplauncher/cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:62) ~[bootstraplauncher-9.0.16.jar:?] {}
+	at java.base/java.lang.invoke.LambdaForm$DMH/0x000001a012002400.invokeStatic(LambdaForm$DMH) ~[?:?] {}
+	at java.base/java.lang.invoke.LambdaForm$MH/0x000001a012087000.invoke(LambdaForm$MH) ~[?:?] {}
+	at java.base/java.lang.invoke.Invokers$Holder.invokeExact_MT(Invokers$Holder) ~[?:?] {}
+-- Thread Dump --
+Details:
+	Threads: "Render thread" prio=10 Id=1 RUNNABLE
+	at MC-BOOTSTRAP/org.lwjgl.opengl@3.3.3+5/org.lwjgl.opengl.GL32C.glFenceSync(Native Method)
+	at MC-BOOTSTRAP/org.lwjgl.opengl@3.3.3+5/org.lwjgl.opengl.GL32.glFenceSync(GL32.java:642)
+	at TRANSFORMER/minecraft@1.21.8/com.mojang.blaze3d.opengl.GlStateManager._glFenceSync(GlStateManager.java:553)
+	at TRANSFORMER/minecraft@1.21.8/com.mojang.blaze3d.opengl.GlFence.<init>(GlFence.java:9)
+	at TRANSFORMER/minecraft@1.21.8/com.mojang.blaze3d.opengl.GlCommandEncoder.createFence(GlCommandEncoder.java:748)
+	at TRANSFORMER/neoforge@21.8.31/net.neoforged.neoforge.client.blaze3d.validation.ValidationCommandEncoder.createFence(ValidationCommandEncoder.java:192)
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.client.renderer.MappableRingBuffer.rotate(MappableRingBuffer.java:54)
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.client.renderer.DynamicUniformStorage.endFrame(DynamicUniformStorage.java:41)
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.client.renderer.DynamicUniforms.reset(DynamicUniforms.java:23)
+	at TRANSFORMER/minecraft@1.21.8/com.mojang.blaze3d.systems.RenderSystem.flipFrame(RenderSystem.java:147)
+	at TRANSFORMER/minecraft@1.21.8/com.mojang.blaze3d.platform.Window.updateDisplay(Window.java:302)
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.client.Minecraft.runTick(Minecraft.java:1306)
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.client.Minecraft.disconnect(Minecraft.java:2159)
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.client.Minecraft.disconnectWithSavingScreen(Minecraft.java:2119)
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.client.gui.screens.PauseScreen.disconnectFromWorld(PauseScreen.java:178)
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.client.gui.screens.PauseScreen.lambda$createPauseMenu$7(PauseScreen.java:119)
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.client.gui.screens.PauseScreen$$Lambda/0x000001a013889cf0.run(Unknown Source)
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.client.multiplayer.chat.report.ReportingContext.draftReportHandled(ReportingContext.java:56)
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.client.gui.screens.PauseScreen.lambda$createPauseMenu$8(PauseScreen.java:119)
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.client.gui.screens.PauseScreen$$Lambda/0x000001a013882ec8.onPress(Unknown Source)
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.client.gui.components.Button.onPress(Button.java:41)
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.client.gui.components.AbstractButton.onClick(AbstractButton.java:51)
+	at TRANSFORMER/neoforge@21.8.31/net.neoforged.neoforge.client.extensions.IAbstractWidgetExtension.onClick(IAbstractWidgetExtension.java:36)
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.client.gui.components.AbstractWidget.mouseClicked(AbstractWidget.java:135)
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.client.gui.components.events.ContainerEventHandler.mouseClicked(ContainerEventHandler.java:44)
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.client.MouseHandler.onPress(MouseHandler.java:110)
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.client.MouseHandler.lambda$setup$4(MouseHandler.java:249)
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.client.MouseHandler$$Lambda/0x000001a01337fbf8.run(Unknown Source)
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.util.thread.BlockableEventLoop.execute(BlockableEventLoop.java:102)
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.client.MouseHandler.lambda$setup$5(MouseHandler.java:249)
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.client.MouseHandler$$Lambda/0x000001a0131931a0.invoke(Unknown Source)
+	at MC-BOOTSTRAP/org.lwjgl.glfw@3.3.3+5/org.lwjgl.glfw.GLFWMouseButtonCallbackI.callback(GLFWMouseButtonCallbackI.java:43)
+	at MC-BOOTSTRAP/org.lwjgl@3.3.3+5/org.lwjgl.system.JNI.invokeV(Native Method)
+	at MC-BOOTSTRAP/org.lwjgl.glfw@3.3.3+5/org.lwjgl.glfw.GLFW.glfwPollEvents(GLFW.java:3438)
+	at TRANSFORMER/minecraft@1.21.8/com.mojang.blaze3d.systems.RenderSystem.pollEvents(RenderSystem.java:131)
+	at TRANSFORMER/minecraft@1.21.8/com.mojang.blaze3d.systems.RenderSystem.flipFrame(RenderSystem.java:140)
+	at TRANSFORMER/minecraft@1.21.8/com.mojang.blaze3d.platform.Window.updateDisplay(Window.java:302)
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.client.Minecraft.runTick(Minecraft.java:1306)
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.client.Minecraft.run(Minecraft.java:882)
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.client.main.Main.main(Main.java:243)
+	at java.base@21.0.8/java.lang.invoke.LambdaForm$DMH/0x000001a012002400.invokeStatic(LambdaForm$DMH)
+	at java.base@21.0.8/java.lang.invoke.LambdaForm$MH/0x000001a012087000.invoke(LambdaForm$MH)
+	at java.base@21.0.8/java.lang.invoke.Invokers$Holder.invokeExact_MT(Invokers$Holder)
+	at java.base@21.0.8/jdk.internal.reflect.DirectMethodHandleAccessor.invokeImpl(DirectMethodHandleAccessor.java:154)
+	at java.base@21.0.8/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base@21.0.8/java.lang.reflect.Method.invoke(Method.java:580)
+	at MC-BOOTSTRAP/fml_loader@9.0.16/net.neoforged.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:132)
+	at MC-BOOTSTRAP/fml_loader@9.0.16/net.neoforged.fml.loading.targets.CommonLaunchHandler.clientService(CommonLaunchHandler.java:120)
+	at MC-BOOTSTRAP/fml_loader@9.0.16/net.neoforged.fml.loading.targets.NeoForgeClientDevLaunchHandler.runService(NeoForgeClientDevLaunchHandler.java:49)
+	at MC-BOOTSTRAP/fml_loader@9.0.16/net.neoforged.fml.loading.targets.CommonLaunchHandler.lambda$launchService$4(CommonLaunchHandler.java:114)
+	at MC-BOOTSTRAP/fml_loader@9.0.16/net.neoforged.fml.loading.targets.CommonLaunchHandler$$Lambda/0x000001a01236f828.run(Unknown Source)
+	at MC-BOOTSTRAP/fml_loader@9.0.16/cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:25)
+	at MC-BOOTSTRAP/fml_loader@9.0.16/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:55)
+	at MC-BOOTSTRAP/fml_loader@9.0.16/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:73)
+	at MC-BOOTSTRAP/fml_loader@9.0.16/cpw.mods.modlauncher.Launcher.run(Launcher.java:104)
+	at MC-BOOTSTRAP/fml_loader@9.0.16/cpw.mods.modlauncher.Launcher.main(Launcher.java:75)
+	at java.base@21.0.8/java.lang.invoke.LambdaForm$DMH/0x000001a012002400.invokeStatic(LambdaForm$DMH)
+	at java.base@21.0.8/java.lang.invoke.LambdaForm$MH/0x000001a012087000.invoke(LambdaForm$MH)
+	at java.base@21.0.8/java.lang.invoke.Invokers$Holder.invokeExact_MT(Invokers$Holder)
+	at java.base@21.0.8/jdk.internal.reflect.DirectMethodHandleAccessor.invokeImpl(DirectMethodHandleAccessor.java:154)
+	at java.base@21.0.8/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base@21.0.8/java.lang.reflect.Method.invoke(Method.java:580)
+	at app/cpw.mods.bootstraplauncher/cpw.mods.bootstraplauncher.BootstrapLauncher.run(BootstrapLauncher.java:203)
+	at app/cpw.mods.bootstraplauncher/cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:62)
+	at java.base@21.0.8/java.lang.invoke.LambdaForm$DMH/0x000001a012002400.invokeStatic(LambdaForm$DMH)
+	at java.base@21.0.8/java.lang.invoke.LambdaForm$MH/0x000001a012087000.invoke(LambdaForm$MH)
+	at java.base@21.0.8/java.lang.invoke.Invokers$Holder.invokeExact_MT(Invokers$Holder)
+	at java.base@21.0.8/jdk.internal.reflect.DirectMethodHandleAccessor.invokeImpl(DirectMethodHandleAccessor.java:154)
+	at java.base@21.0.8/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base@21.0.8/java.lang.reflect.Method.invoke(Method.java:580)
+	at app//net.neoforged.devlaunch.Main.main(Main.java:57)
+
+
+"Reference Handler" daemon prio=10 Id=9 RUNNABLE
+	at java.base@21.0.8/java.lang.ref.Reference.waitForReferencePendingList(Native Method)
+	at java.base@21.0.8/java.lang.ref.Reference.processPendingReferences(Reference.java:246)
+	at java.base@21.0.8/java.lang.ref.Reference$ReferenceHandler.run(Reference.java:208)
+
+
+"Finalizer" daemon prio=8 Id=10 WAITING on java.lang.ref.NativeReferenceQueue$Lock@625b67a1
+	at java.base@21.0.8/java.lang.Object.wait0(Native Method)
+	-  waiting on java.lang.ref.NativeReferenceQueue$Lock@625b67a1
+	at java.base@21.0.8/java.lang.Object.wait(Object.java:366)
+	at java.base@21.0.8/java.lang.Object.wait(Object.java:339)
+	at java.base@21.0.8/java.lang.ref.NativeReferenceQueue.await(NativeReferenceQueue.java:48)
+	at java.base@21.0.8/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:158)
+	at java.base@21.0.8/java.lang.ref.NativeReferenceQueue.remove(NativeReferenceQueue.java:89)
+	at java.base@21.0.8/java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:173)
+
+
+"Signal Dispatcher" daemon prio=9 Id=11 RUNNABLE
+
+
+"Attach Listener" daemon prio=5 Id=12 RUNNABLE
+
+
+"Common-Cleaner" daemon prio=8 Id=19 TIMED_WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@7067e01a
+	at java.base@21.0.8/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@7067e01a
+	at java.base@21.0.8/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+	at java.base@21.0.8/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1852)
+	at java.base@21.0.8/java.lang.ref.ReferenceQueue.await(ReferenceQueue.java:71)
+	at java.base@21.0.8/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:143)
+	at java.base@21.0.8/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:218)
+	at java.base@21.0.8/jdk.internal.ref.CleanerImpl.run(CleanerImpl.java:140)
+	at java.base@21.0.8/java.lang.Thread.runWith(Thread.java:1596)
+	at java.base@21.0.8/java.lang.Thread.run(Thread.java:1583)
+	at java.base@21.0.8/jdk.internal.misc.InnocuousThread.run(InnocuousThread.java:186)
+
+
+"Notification Thread" daemon prio=9 Id=20 RUNNABLE
+
+
+"RMI TCP Accept-0" daemon prio=5 Id=22 RUNNABLE (in native)
+	at java.base@21.0.8/sun.nio.ch.Net.accept(Native Method)
+	at java.base@21.0.8/sun.nio.ch.NioSocketImpl.accept(NioSocketImpl.java:748)
+	at java.base@21.0.8/java.net.ServerSocket.implAccept(ServerSocket.java:698)
+	at java.base@21.0.8/java.net.ServerSocket.platformImplAccept(ServerSocket.java:663)
+	at java.base@21.0.8/java.net.ServerSocket.implAccept(ServerSocket.java:639)
+	at java.base@21.0.8/java.net.ServerSocket.implAccept(ServerSocket.java:585)
+	at java.base@21.0.8/java.net.ServerSocket.accept(ServerSocket.java:543)
+	at java.rmi@21.0.8/sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(TCPTransport.java:424)
+	at java.rmi@21.0.8/sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(TCPTransport.java:388)
+	at java.base@21.0.8/java.lang.Thread.runWith(Thread.java:1596)
+	at java.base@21.0.8/java.lang.Thread.run(Thread.java:1583)
+
+	Number of locked synchronizers = 1
+	- java.util.concurrent.locks.ReentrantLock$NonfairSync@33edee26
+
+
+"RMI TCP Accept-1099" daemon prio=5 Id=23 RUNNABLE (in native)
+	at java.base@21.0.8/sun.nio.ch.Net.accept(Native Method)
+	at java.base@21.0.8/sun.nio.ch.NioSocketImpl.accept(NioSocketImpl.java:748)
+	at java.base@21.0.8/java.net.ServerSocket.implAccept(ServerSocket.java:698)
+	at java.base@21.0.8/java.net.ServerSocket.platformImplAccept(ServerSocket.java:663)
+	at java.base@21.0.8/java.net.ServerSocket.implAccept(ServerSocket.java:639)
+	at java.base@21.0.8/java.net.ServerSocket.implAccept(ServerSocket.java:585)
+	at java.base@21.0.8/java.net.ServerSocket.accept(ServerSocket.java:543)
+	at java.rmi@21.0.8/sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(TCPTransport.java:424)
+	at java.rmi@21.0.8/sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(TCPTransport.java:388)
+	at java.base@21.0.8/java.lang.Thread.runWith(Thread.java:1596)
+	at java.base@21.0.8/java.lang.Thread.run(Thread.java:1583)
+
+	Number of locked synchronizers = 1
+	- java.util.concurrent.locks.ReentrantLock$NonfairSync@1d14a739
+
+
+"RMI TCP Accept-0" daemon prio=5 Id=24 RUNNABLE (in native)
+	at java.base@21.0.8/sun.nio.ch.Net.accept(Native Method)
+	at java.base@21.0.8/sun.nio.ch.NioSocketImpl.accept(NioSocketImpl.java:748)
+	at java.base@21.0.8/java.net.ServerSocket.implAccept(ServerSocket.java:698)
+	at java.base@21.0.8/java.net.ServerSocket.platformImplAccept(ServerSocket.java:663)
+	at java.base@21.0.8/java.net.ServerSocket.implAccept(ServerSocket.java:639)
+	at java.base@21.0.8/java.net.ServerSocket.implAccept(ServerSocket.java:585)
+	at java.base@21.0.8/java.net.ServerSocket.accept(ServerSocket.java:543)
+	at jdk.management.agent@21.0.8/sun.management.jmxremote.LocalRMIServerSocketFactory$1.accept(LocalRMIServerSocketFactory.java:52)
+	at java.rmi@21.0.8/sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(TCPTransport.java:424)
+	at java.rmi@21.0.8/sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(TCPTransport.java:388)
+	at java.base@21.0.8/java.lang.Thread.runWith(Thread.java:1596)
+	at java.base@21.0.8/java.lang.Thread.run(Thread.java:1583)
+
+	Number of locked synchronizers = 1
+	- java.util.concurrent.locks.ReentrantLock$NonfairSync@24cbbd55
+
+
+"RMI Scheduler(0)" daemon prio=5 Id=33 TIMED_WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@6b63eee6
+	at java.base@21.0.8/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@6b63eee6
+	at java.base@21.0.8/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+	at java.base@21.0.8/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1763)
+	at java.base@21.0.8/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+	at java.base@21.0.8/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+	at java.base@21.0.8/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+	at java.base@21.0.8/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base@21.0.8/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base@21.0.8/java.lang.Thread.runWith(Thread.java:1596)
+	at java.base@21.0.8/java.lang.Thread.run(Thread.java:1583)
+
+
+"RMI TCP Connection(2)-fe80:0:0:0:7bf3:c981:99d4:eca5%13" daemon prio=5 Id=34 RUNNABLE (in native)
+	at java.base@21.0.8/sun.nio.ch.Net.poll(Native Method)
+	at java.base@21.0.8/sun.nio.ch.NioSocketImpl.park(NioSocketImpl.java:191)
+	at java.base@21.0.8/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:280)
+	at java.base@21.0.8/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:304)
+	at java.base@21.0.8/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346)
+	at java.base@21.0.8/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796)
+	at java.base@21.0.8/java.net.Socket$SocketInputStream.read(Socket.java:1099)
+	at java.base@21.0.8/java.io.BufferedInputStream.fill(BufferedInputStream.java:291)
+	at java.base@21.0.8/java.io.BufferedInputStream.implRead(BufferedInputStream.java:325)
+	at java.base@21.0.8/java.io.BufferedInputStream.read(BufferedInputStream.java:312)
+	at java.base@21.0.8/java.io.FilterInputStream.read(FilterInputStream.java:71)
+	at java.rmi@21.0.8/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:580)
+	at java.rmi@21.0.8/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844)
+	at java.rmi@21.0.8/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721)
+	at java.rmi@21.0.8/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler$$Lambda/0x000001a0120f6498.run(Unknown Source)
+	at java.base@21.0.8/java.security.AccessController.executePrivileged(AccessController.java:778)
+	at java.base@21.0.8/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.rmi@21.0.8/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720)
+	at java.base@21.0.8/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base@21.0.8/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base@21.0.8/java.lang.Thread.runWith(Thread.java:1596)
+	at java.base@21.0.8/java.lang.Thread.run(Thread.java:1583)
+
+	Number of locked synchronizers = 3
+	- java.util.concurrent.locks.ReentrantLock$NonfairSync@37a3b172
+	- java.util.concurrent.ThreadPoolExecutor$Worker@6433593d
+	- java.util.concurrent.locks.ReentrantLock$NonfairSync@fb6e5d0
+
+
+"JMX server connection timeout 35" daemon prio=5 Id=35 TIMED_WAITING on [I@76eec066
+	at java.base@21.0.8/java.lang.Object.wait0(Native Method)
+	-  waiting on [I@76eec066
+	at java.base@21.0.8/java.lang.Object.wait(Object.java:366)
+	at java.management@21.0.8/com.sun.jmx.remote.internal.ServerCommunicatorAdmin$Timeout.run(ServerCommunicatorAdmin.java:171)
+	at java.base@21.0.8/java.lang.Thread.runWith(Thread.java:1596)
+	at java.base@21.0.8/java.lang.Thread.run(Thread.java:1583)
+
+
+"JNA Cleaner" daemon prio=5 Id=50 TIMED_WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@20e1483
+	at java.base@21.0.8/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@20e1483
+	at java.base@21.0.8/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+	at java.base@21.0.8/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1852)
+	at java.base@21.0.8/java.lang.ref.ReferenceQueue.await(ReferenceQueue.java:71)
+	at java.base@21.0.8/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:143)
+	at java.base@21.0.8/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:218)
+	at MC-BOOTSTRAP/com.sun.jna@5.15.0/com.sun.jna.internal.Cleaner$CleanerThread.run(Cleaner.java:154)
+
+
+"modloading-sync-worker" daemon prio=5 Id=55 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@288c1d91
+	at java.base@21.0.8/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@288c1d91
+	at java.base@21.0.8/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+	at java.base@21.0.8/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:519)
+	at java.base@21.0.8/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3780)
+	at java.base@21.0.8/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3725)
+	at java.base@21.0.8/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1712)
+	at java.base@21.0.8/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+	at java.base@21.0.8/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+	at java.base@21.0.8/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base@21.0.8/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base@21.0.8/java.lang.Thread.runWith(Thread.java:1596)
+	at java.base@21.0.8/java.lang.Thread.run(Thread.java:1583)
+
+
+"FileSystemWatchService" daemon prio=5 Id=56 RUNNABLE (in native)
+	at java.base@21.0.8/sun.nio.fs.WindowsNativeDispatcher.GetQueuedCompletionStatus0(Native Method)
+	at java.base@21.0.8/sun.nio.fs.WindowsNativeDispatcher.GetQueuedCompletionStatus(WindowsNativeDispatcher.java:1075)
+	at java.base@21.0.8/sun.nio.fs.WindowsWatchService$Poller.run(WindowsWatchService.java:587)
+	at java.base@21.0.8/java.lang.Thread.runWith(Thread.java:1596)
+	at java.base@21.0.8/java.lang.Thread.run(Thread.java:1583)
+
+
+"config-file-watcher-0-0" daemon prio=5 Id=57 TIMED_WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@102cf535
+	at java.base@21.0.8/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@102cf535
+	at java.base@21.0.8/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+	at java.base@21.0.8/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1763)
+	at java.base@21.0.8/java.util.concurrent.LinkedBlockingDeque.pollFirst(LinkedBlockingDeque.java:515)
+	at java.base@21.0.8/java.util.concurrent.LinkedBlockingDeque.poll(LinkedBlockingDeque.java:677)
+	at java.base@21.0.8/sun.nio.fs.AbstractWatchService.poll(AbstractWatchService.java:108)
+	at MC-BOOTSTRAP/com.electronwill.nightconfig.core@3.8.3/com.electronwill.nightconfig.core.file.FileWatcher$FsWatcher.run(FileWatcher.java:531)
+	at java.base@21.0.8/java.lang.Thread.runWith(Thread.java:1596)
+	at java.base@21.0.8/java.lang.Thread.run(Thread.java:1583)
+
+
+"Timer hack thread" daemon prio=5 Id=58 TIMED_WAITING
+	at java.base@21.0.8/java.lang.Thread.sleep0(Native Method)
+	at java.base@21.0.8/java.lang.Thread.sleep(Thread.java:509)
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.Util$7.run(Util.java:884)
+
+
+"Yggdrasil Key Fetcher" daemon prio=5 Id=60 TIMED_WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@1041faa6
+	at java.base@21.0.8/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@1041faa6
+	at java.base@21.0.8/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+	at java.base@21.0.8/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1763)
+	at java.base@21.0.8/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+	at java.base@21.0.8/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+	at java.base@21.0.8/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+	at java.base@21.0.8/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base@21.0.8/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base@21.0.8/java.lang.Thread.runWith(Thread.java:1596)
+	at java.base@21.0.8/java.lang.Thread.run(Thread.java:1583)
+
+
+"Worker-Main-3" daemon prio=5 Id=68 TIMED_WAITING on java.util.concurrent.ForkJoinPool@62995e21
+	at java.base@21.0.8/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.ForkJoinPool@62995e21
+	at java.base@21.0.8/java.util.concurrent.locks.LockSupport.parkUntil(LockSupport.java:449)
+	at java.base@21.0.8/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1891)
+	at java.base@21.0.8/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1809)
+	at java.base@21.0.8/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+
+
+"Worker-Main-2" daemon prio=5 Id=69 WAITING on java.util.concurrent.ForkJoinPool@62995e21
+	at java.base@21.0.8/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.ForkJoinPool@62995e21
+	at java.base@21.0.8/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+	at java.base@21.0.8/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1893)
+	at java.base@21.0.8/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1809)
+	at java.base@21.0.8/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+
+
+"Worker-Main-4" daemon prio=5 Id=70 WAITING on java.util.concurrent.ForkJoinPool@62995e21
+	at java.base@21.0.8/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.ForkJoinPool@62995e21
+	at java.base@21.0.8/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+	at java.base@21.0.8/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1893)
+	at java.base@21.0.8/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1809)
+	at java.base@21.0.8/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+
+
+"Worker-Main-6" daemon prio=5 Id=72 WAITING on java.util.concurrent.ForkJoinPool@62995e21
+	at java.base@21.0.8/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.ForkJoinPool@62995e21
+	at java.base@21.0.8/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+	at java.base@21.0.8/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1893)
+	at java.base@21.0.8/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1809)
+	at java.base@21.0.8/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+
+
+"Worker-Main-7" daemon prio=5 Id=73 WAITING on java.util.concurrent.ForkJoinPool@62995e21
+	at java.base@21.0.8/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.ForkJoinPool@62995e21
+	at java.base@21.0.8/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+	at java.base@21.0.8/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1893)
+	at java.base@21.0.8/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1809)
+	at java.base@21.0.8/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+
+
+"Worker-Main-8" daemon prio=5 Id=79 WAITING on java.util.concurrent.ForkJoinPool@62995e21
+	at java.base@21.0.8/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.ForkJoinPool@62995e21
+	at java.base@21.0.8/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+	at java.base@21.0.8/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1893)
+	at java.base@21.0.8/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1809)
+	at java.base@21.0.8/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+
+
+"Server thread" prio=8 Id=81 WAITING on java.util.concurrent.CompletableFuture$Signaller@2a31a776
+	at java.base@21.0.8/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.CompletableFuture$Signaller@2a31a776
+	at java.base@21.0.8/java.util.concurrent.locks.LockSupport.park(LockSupport.java:221)
+	at java.base@21.0.8/java.util.concurrent.CompletableFuture$Signaller.block(CompletableFuture.java:1864)
+	at java.base@21.0.8/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3780)
+	at java.base@21.0.8/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3725)
+	at java.base@21.0.8/java.util.concurrent.CompletableFuture.waitingGet(CompletableFuture.java:1898)
+	at java.base@21.0.8/java.util.concurrent.CompletableFuture.join(CompletableFuture.java:2117)
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.server.level.ChunkMap.isExistingChunkFull(ChunkMap.java:812)
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.server.level.ChunkMap.save(ChunkMap.java:774)
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.server.level.ChunkMap.lambda$scheduleUnload$12(ChunkMap.java:537)
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.server.level.ChunkMap$$Lambda/0x000001a013805a68.run(Unknown Source)
+	at java.base@21.0.8/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:787)
+	at java.base@21.0.8/java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:482)
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.server.level.ChunkMap.processUnloads(ChunkMap.java:498)
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.server.level.ChunkMap.tick(ChunkMap.java:463)
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.server.level.ServerChunkCache.tick(ServerChunkCache.java:349)
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.server.MinecraftServer.stopServer(MinecraftServer.java:622)
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.client.server.IntegratedServer.stopServer(IntegratedServer.java:214)
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:755)
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:277)
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.server.MinecraftServer$$Lambda/0x000001a013497b18.run(Unknown Source)
+	at java.base@21.0.8/java.lang.Thread.runWith(Thread.java:1596)
+	at java.base@21.0.8/java.lang.Thread.run(Thread.java:1583)
+
+
+"Worker-Main-9" daemon prio=8 Id=82 WAITING on java.util.concurrent.ForkJoinPool@62995e21
+	at java.base@21.0.8/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.ForkJoinPool@62995e21
+	at java.base@21.0.8/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+	at java.base@21.0.8/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1893)
+	at java.base@21.0.8/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1809)
+	at java.base@21.0.8/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+
+
+"IO-Worker-2" prio=8 Id=83 TIMED_WAITING on java.util.concurrent.SynchronousQueue$Transferer@5d436a58
+	at java.base@21.0.8/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.SynchronousQueue$Transferer@5d436a58
+	at java.base@21.0.8/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:410)
+	at java.base@21.0.8/java.util.concurrent.LinkedTransferQueue$DualNode.await(LinkedTransferQueue.java:452)
+	at java.base@21.0.8/java.util.concurrent.SynchronousQueue$Transferer.xferLifo(SynchronousQueue.java:194)
+	at java.base@21.0.8/java.util.concurrent.SynchronousQueue.xfer(SynchronousQueue.java:235)
+	at java.base@21.0.8/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:338)
+	at java.base@21.0.8/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1069)
+	at java.base@21.0.8/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base@21.0.8/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base@21.0.8/java.lang.Thread.runWith(Thread.java:1596)
+	at java.base@21.0.8/java.lang.Thread.run(Thread.java:1583)
+
+
+"IO-Worker-5" prio=10 Id=86 TIMED_WAITING on java.util.concurrent.SynchronousQueue$Transferer@5d436a58
+	at java.base@21.0.8/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.SynchronousQueue$Transferer@5d436a58
+	at java.base@21.0.8/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:410)
+	at java.base@21.0.8/java.util.concurrent.LinkedTransferQueue$DualNode.await(LinkedTransferQueue.java:452)
+	at java.base@21.0.8/java.util.concurrent.SynchronousQueue$Transferer.xferLifo(SynchronousQueue.java:194)
+	at java.base@21.0.8/java.util.concurrent.SynchronousQueue.xfer(SynchronousQueue.java:235)
+	at java.base@21.0.8/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:338)
+	at java.base@21.0.8/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1069)
+	at java.base@21.0.8/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base@21.0.8/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base@21.0.8/java.lang.Thread.runWith(Thread.java:1596)
+	at java.base@21.0.8/java.lang.Thread.run(Thread.java:1583)
+
+
+"IO-Worker-6" prio=10 Id=87 TIMED_WAITING on java.util.concurrent.SynchronousQueue$Transferer@5d436a58
+	at java.base@21.0.8/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.SynchronousQueue$Transferer@5d436a58
+	at java.base@21.0.8/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:410)
+	at java.base@21.0.8/java.util.concurrent.LinkedTransferQueue$DualNode.await(LinkedTransferQueue.java:452)
+	at java.base@21.0.8/java.util.concurrent.SynchronousQueue$Transferer.xferLifo(SynchronousQueue.java:194)
+	at java.base@21.0.8/java.util.concurrent.SynchronousQueue.xfer(SynchronousQueue.java:235)
+	at java.base@21.0.8/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:338)
+	at java.base@21.0.8/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1069)
+	at java.base@21.0.8/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base@21.0.8/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base@21.0.8/java.lang.Thread.runWith(Thread.java:1596)
+	at java.base@21.0.8/java.lang.Thread.run(Thread.java:1583)
+
+
+"Netty Server IO #0" daemon prio=10 Id=89 RUNNABLE (in native)
+	at java.base@21.0.8/sun.nio.ch.WEPoll.wait(Native Method)
+	at java.base@21.0.8/sun.nio.ch.WEPollSelectorImpl.doSelect(WEPollSelectorImpl.java:114)
+	at java.base@21.0.8/sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:130)
+	-  locked io.netty.channel.nio.SelectedSelectionKeySet@42c83f9c
+	-  locked sun.nio.ch.WEPollSelectorImpl@6a0809b2
+	at java.base@21.0.8/sun.nio.ch.SelectorImpl.select(SelectorImpl.java:147)
+	at MC-BOOTSTRAP/io.netty.transport@4.1.118.Final/io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:68)
+	at MC-BOOTSTRAP/io.netty.transport@4.1.118.Final/io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:887)
+	at MC-BOOTSTRAP/io.netty.transport@4.1.118.Final/io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:526)
+	at MC-BOOTSTRAP/io.netty.common@4.1.118.Final/io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:998)
+	at MC-BOOTSTRAP/io.netty.common@4.1.118.Final/io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at java.base@21.0.8/java.lang.Thread.runWith(Thread.java:1596)
+	at java.base@21.0.8/java.lang.Thread.run(Thread.java:1583)
+
+
+"Netty Local Client IO #0" daemon prio=5 Id=90 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@4d250992
+	at java.base@21.0.8/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@4d250992
+	at java.base@21.0.8/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+	at java.base@21.0.8/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:519)
+	at java.base@21.0.8/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3780)
+	at java.base@21.0.8/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3725)
+	at java.base@21.0.8/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1712)
+	at java.base@21.0.8/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+	at MC-BOOTSTRAP/io.netty.common@4.1.118.Final/io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:243)
+	at MC-BOOTSTRAP/io.netty.transport@4.1.118.Final/io.netty.channel.DefaultEventLoop.run(DefaultEventLoop.java:52)
+	at MC-BOOTSTRAP/io.netty.common@4.1.118.Final/io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:998)
+	at MC-BOOTSTRAP/io.netty.common@4.1.118.Final/io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at java.base@21.0.8/java.lang.Thread.runWith(Thread.java:1596)
+	at java.base@21.0.8/java.lang.Thread.run(Thread.java:1583)
+
+
+"Netty Server IO #1" daemon prio=10 Id=91 RUNNABLE (in native)
+	at java.base@21.0.8/sun.nio.ch.WEPoll.wait(Native Method)
+	at java.base@21.0.8/sun.nio.ch.WEPollSelectorImpl.doSelect(WEPollSelectorImpl.java:114)
+	at java.base@21.0.8/sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:130)
+	-  locked io.netty.channel.nio.SelectedSelectionKeySet@b72abc4
+	-  locked sun.nio.ch.WEPollSelectorImpl@84551e9
+	at java.base@21.0.8/sun.nio.ch.SelectorImpl.select(SelectorImpl.java:147)
+	at MC-BOOTSTRAP/io.netty.transport@4.1.118.Final/io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:68)
+	at MC-BOOTSTRAP/io.netty.transport@4.1.118.Final/io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:887)
+	at MC-BOOTSTRAP/io.netty.transport@4.1.118.Final/io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:526)
+	at MC-BOOTSTRAP/io.netty.common@4.1.118.Final/io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:998)
+	at MC-BOOTSTRAP/io.netty.common@4.1.118.Final/io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at java.base@21.0.8/java.lang.Thread.runWith(Thread.java:1596)
+	at java.base@21.0.8/java.lang.Thread.run(Thread.java:1583)
+
+
+"Download-4" daemon prio=10 Id=94 TIMED_WAITING on java.util.concurrent.SynchronousQueue$Transferer@22aa9cca
+	at java.base@21.0.8/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.SynchronousQueue$Transferer@22aa9cca
+	at java.base@21.0.8/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:410)
+	at java.base@21.0.8/java.util.concurrent.LinkedTransferQueue$DualNode.await(LinkedTransferQueue.java:452)
+	at java.base@21.0.8/java.util.concurrent.SynchronousQueue$Transferer.xferLifo(SynchronousQueue.java:194)
+	at java.base@21.0.8/java.util.concurrent.SynchronousQueue.xfer(SynchronousQueue.java:235)
+	at java.base@21.0.8/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:338)
+	at java.base@21.0.8/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1069)
+	at java.base@21.0.8/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base@21.0.8/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base@21.0.8/java.lang.Thread.runWith(Thread.java:1596)
+	at java.base@21.0.8/java.lang.Thread.run(Thread.java:1583)
+
+
+"Sound engine" daemon prio=10 Id=95 WAITING on java.lang.String@47266894
+	at java.base@21.0.8/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.lang.String@47266894
+	at java.base@21.0.8/java.util.concurrent.locks.LockSupport.park(LockSupport.java:221)
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.client.sounds.SoundEngineExecutor.waitForTasks(SoundEngineExecutor.java:48)
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:137)
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.client.sounds.SoundEngineExecutor.run(SoundEngineExecutor.java:42)
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.client.sounds.SoundEngineExecutor$$Lambda/0x000001a013123770.run(Unknown Source)
+	at java.base@21.0.8/java.lang.Thread.runWith(Thread.java:1596)
+	at java.base@21.0.8/java.lang.Thread.run(Thread.java:1583)
+
+
+"IO-Worker-8" prio=8 Id=96 TIMED_WAITING on java.util.concurrent.SynchronousQueue$Transferer@5d436a58
+	at java.base@21.0.8/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.SynchronousQueue$Transferer@5d436a58
+	at java.base@21.0.8/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:410)
+	at java.base@21.0.8/java.util.concurrent.LinkedTransferQueue$DualNode.await(LinkedTransferQueue.java:452)
+	at java.base@21.0.8/java.util.concurrent.SynchronousQueue$Transferer.xferLifo(SynchronousQueue.java:194)
+	at java.base@21.0.8/java.util.concurrent.SynchronousQueue.xfer(SynchronousQueue.java:235)
+	at java.base@21.0.8/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:338)
+	at java.base@21.0.8/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1069)
+	at java.base@21.0.8/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base@21.0.8/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base@21.0.8/java.lang.Thread.runWith(Thread.java:1596)
+	at java.base@21.0.8/java.lang.Thread.run(Thread.java:1583)
+
+
+"IO-Worker-9" prio=8 Id=97 RUNNABLE
+	at java.base@21.0.8/sun.nio.ch.FileDispatcherImpl.pwrite0(Native Method)
+	at java.base@21.0.8/sun.nio.ch.FileDispatcherImpl.pwrite(FileDispatcherImpl.java:81)
+	at java.base@21.0.8/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:135)
+	at java.base@21.0.8/sun.nio.ch.IOUtil.write(IOUtil.java:81)
+	at java.base@21.0.8/sun.nio.ch.IOUtil.write(IOUtil.java:72)
+	at java.base@21.0.8/sun.nio.ch.FileChannelImpl.writeInternal(FileChannelImpl.java:1026)
+	at java.base@21.0.8/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:1007)
+	-  locked java.lang.Object@5914d73f
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.world.level.chunk.storage.RegionFile.writeHeader(RegionFile.java:341)
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.world.level.chunk.storage.RegionFile.write(RegionFile.java:313)
+	-  locked net.minecraft.world.level.chunk.storage.RegionFile@7b7c1fed
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.world.level.chunk.storage.RegionFile$ChunkBuffer.close(RegionFile.java:398)
+	at java.base@21.0.8/java.util.zip.DeflaterOutputStream.close(DeflaterOutputStream.java:272)
+	at java.base@21.0.8/java.io.FilterOutputStream.close(FilterOutputStream.java:190)
+	at java.base@21.0.8/java.io.FilterOutputStream.close(FilterOutputStream.java:190)
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.world.level.chunk.storage.RegionFileStorage.write(RegionFileStorage.java:82)
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.world.level.chunk.storage.IOWorker.runStore(IOWorker.java:229)
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.world.level.chunk.storage.IOWorker.storePendingChunk(IOWorker.java:218)
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.world.level.chunk.storage.IOWorker$$Lambda/0x000001a01350f6a0.run(Unknown Source)
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.util.thread.StrictQueue$RunnableWithPriority.run(StrictQueue.java:99)
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.Util.runNamed(Util.java:287)
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.util.thread.AbstractConsecutiveExecutor.pollTask(AbstractConsecutiveExecutor.java:47)
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.util.thread.AbstractConsecutiveExecutor.run(AbstractConsecutiveExecutor.java:56)
+	at java.base@21.0.8/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base@21.0.8/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base@21.0.8/java.lang.Thread.runWith(Thread.java:1596)
+	at java.base@21.0.8/java.lang.Thread.run(Thread.java:1583)
+
+	Number of locked synchronizers = 1
+	- java.util.concurrent.ThreadPoolExecutor$Worker@1172d550
+
+
+"IO-Worker-10" prio=8 Id=98 TIMED_WAITING on java.util.concurrent.SynchronousQueue$Transferer@5d436a58
+	at java.base@21.0.8/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.SynchronousQueue$Transferer@5d436a58
+	at java.base@21.0.8/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:410)
+	at java.base@21.0.8/java.util.concurrent.LinkedTransferQueue$DualNode.await(LinkedTransferQueue.java:452)
+	at java.base@21.0.8/java.util.concurrent.SynchronousQueue$Transferer.xferLifo(SynchronousQueue.java:194)
+	at java.base@21.0.8/java.util.concurrent.SynchronousQueue.xfer(SynchronousQueue.java:235)
+	at java.base@21.0.8/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:338)
+	at java.base@21.0.8/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1069)
+	at java.base@21.0.8/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base@21.0.8/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base@21.0.8/java.lang.Thread.runWith(Thread.java:1596)
+	at java.base@21.0.8/java.lang.Thread.run(Thread.java:1583)
+
+
+"IO-Worker-11" prio=8 Id=99 TIMED_WAITING on java.util.concurrent.SynchronousQueue$Transferer@5d436a58
+	at java.base@21.0.8/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.SynchronousQueue$Transferer@5d436a58
+	at java.base@21.0.8/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:410)
+	at java.base@21.0.8/java.util.concurrent.LinkedTransferQueue$DualNode.await(LinkedTransferQueue.java:452)
+	at java.base@21.0.8/java.util.concurrent.SynchronousQueue$Transferer.xferLifo(SynchronousQueue.java:194)
+	at java.base@21.0.8/java.util.concurrent.SynchronousQueue.xfer(SynchronousQueue.java:235)
+	at java.base@21.0.8/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:338)
+	at java.base@21.0.8/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1069)
+	at java.base@21.0.8/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base@21.0.8/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base@21.0.8/java.lang.Thread.runWith(Thread.java:1596)
+	at java.base@21.0.8/java.lang.Thread.run(Thread.java:1583)
+
+
+"IOWorker-entities" prio=8 Id=100 TIMED_WAITING on java.util.concurrent.SynchronousQueue$Transferer@5d436a58
+	at java.base@21.0.8/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.SynchronousQueue$Transferer@5d436a58
+	at java.base@21.0.8/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:410)
+	at java.base@21.0.8/java.util.concurrent.LinkedTransferQueue$DualNode.await(LinkedTransferQueue.java:452)
+	at java.base@21.0.8/java.util.concurrent.SynchronousQueue$Transferer.xferLifo(SynchronousQueue.java:194)
+	at java.base@21.0.8/java.util.concurrent.SynchronousQueue.xfer(SynchronousQueue.java:235)
+	at java.base@21.0.8/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:338)
+	at java.base@21.0.8/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1069)
+	at java.base@21.0.8/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base@21.0.8/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base@21.0.8/java.lang.Thread.runWith(Thread.java:1596)
+	at java.base@21.0.8/java.lang.Thread.run(Thread.java:1583)
+
+
+"IO-Worker-13" prio=8 Id=101 TIMED_WAITING on java.util.concurrent.SynchronousQueue$Transferer@5d436a58
+	at java.base@21.0.8/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.SynchronousQueue$Transferer@5d436a58
+	at java.base@21.0.8/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:410)
+	at java.base@21.0.8/java.util.concurrent.LinkedTransferQueue$DualNode.await(LinkedTransferQueue.java:452)
+	at java.base@21.0.8/java.util.concurrent.SynchronousQueue$Transferer.xferLifo(SynchronousQueue.java:194)
+	at java.base@21.0.8/java.util.concurrent.SynchronousQueue.xfer(SynchronousQueue.java:235)
+	at java.base@21.0.8/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:338)
+	at java.base@21.0.8/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1069)
+	at java.base@21.0.8/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base@21.0.8/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base@21.0.8/java.lang.Thread.runWith(Thread.java:1596)
+	at java.base@21.0.8/java.lang.Thread.run(Thread.java:1583)
+
+
+"IOWorker-chunk" prio=8 Id=102 TIMED_WAITING on java.util.concurrent.SynchronousQueue$Transferer@5d436a58
+	at java.base@21.0.8/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.SynchronousQueue$Transferer@5d436a58
+	at java.base@21.0.8/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:410)
+	at java.base@21.0.8/java.util.concurrent.LinkedTransferQueue$DualNode.await(LinkedTransferQueue.java:452)
+	at java.base@21.0.8/java.util.concurrent.SynchronousQueue$Transferer.xferLifo(SynchronousQueue.java:194)
+	at java.base@21.0.8/java.util.concurrent.SynchronousQueue.xfer(SynchronousQueue.java:235)
+	at java.base@21.0.8/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:338)
+	at java.base@21.0.8/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1069)
+	at java.base@21.0.8/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base@21.0.8/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base@21.0.8/java.lang.Thread.runWith(Thread.java:1596)
+	at java.base@21.0.8/java.lang.Thread.run(Thread.java:1583)
+
+
+"IO-Worker-15" prio=8 Id=103 RUNNABLE
+	at java.base@21.0.8/java.lang.StringConcatHelper.mix(StringConcatHelper.java:101)
+	at java.base@21.0.8/java.lang.invoke.DirectMethodHandle$Holder.invokeStatic(DirectMethodHandle$Holder)
+	at java.base@21.0.8/java.lang.invoke.DelegatingMethodHandle$Holder.reinvoke_L(DelegatingMethodHandle$Holder)
+	at java.base@21.0.8/java.lang.invoke.LambdaForm$MH/0x000001a01350e000.invoke(LambdaForm$MH)
+	at java.base@21.0.8/java.lang.invoke.LambdaForm$MH/0x000001a01350e400.invoke(LambdaForm$MH)
+	at java.base@21.0.8/java.lang.invoke.Invokers$Holder.linkToTargetMethod(Invokers$Holder)
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.world.level.chunk.storage.RegionFile.getExternalChunkPath(RegionFile.java:108)
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.world.level.chunk.storage.RegionFile.lambda$write$0(RegionFile.java:307)
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.world.level.chunk.storage.RegionFile$$Lambda/0x000001a0135fec90.run(Unknown Source)
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.world.level.chunk.storage.RegionFile.write(RegionFile.java:314)
+	-  locked net.minecraft.world.level.chunk.storage.RegionFile@d469084
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.world.level.chunk.storage.RegionFile$ChunkBuffer.close(RegionFile.java:398)
+	at java.base@21.0.8/java.util.zip.DeflaterOutputStream.close(DeflaterOutputStream.java:272)
+	at java.base@21.0.8/java.io.FilterOutputStream.close(FilterOutputStream.java:190)
+	at java.base@21.0.8/java.io.FilterOutputStream.close(FilterOutputStream.java:190)
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.world.level.chunk.storage.RegionFileStorage.write(RegionFileStorage.java:82)
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.world.level.chunk.storage.IOWorker.runStore(IOWorker.java:229)
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.world.level.chunk.storage.IOWorker.storePendingChunk(IOWorker.java:218)
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.world.level.chunk.storage.IOWorker$$Lambda/0x000001a01350f6a0.run(Unknown Source)
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.util.thread.StrictQueue$RunnableWithPriority.run(StrictQueue.java:99)
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.Util.runNamed(Util.java:287)
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.util.thread.AbstractConsecutiveExecutor.pollTask(AbstractConsecutiveExecutor.java:47)
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.util.thread.AbstractConsecutiveExecutor.run(AbstractConsecutiveExecutor.java:56)
+	at java.base@21.0.8/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base@21.0.8/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base@21.0.8/java.lang.Thread.runWith(Thread.java:1596)
+	at java.base@21.0.8/java.lang.Thread.run(Thread.java:1583)
+
+	Number of locked synchronizers = 1
+	- java.util.concurrent.ThreadPoolExecutor$Worker@6a03ae9d
+
+
+"IO-Worker-16" prio=8 Id=104 TIMED_WAITING on java.util.concurrent.SynchronousQueue$Transferer@5d436a58
+	at java.base@21.0.8/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.SynchronousQueue$Transferer@5d436a58
+	at java.base@21.0.8/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:410)
+	at java.base@21.0.8/java.util.concurrent.LinkedTransferQueue$DualNode.await(LinkedTransferQueue.java:452)
+	at java.base@21.0.8/java.util.concurrent.SynchronousQueue$Transferer.xferLifo(SynchronousQueue.java:194)
+	at java.base@21.0.8/java.util.concurrent.SynchronousQueue.xfer(SynchronousQueue.java:235)
+	at java.base@21.0.8/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:338)
+	at java.base@21.0.8/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1069)
+	at java.base@21.0.8/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base@21.0.8/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base@21.0.8/java.lang.Thread.runWith(Thread.java:1596)
+	at java.base@21.0.8/java.lang.Thread.run(Thread.java:1583)
+
+
+"IO-Worker-17" prio=8 Id=105 TIMED_WAITING on java.util.concurrent.SynchronousQueue$Transferer@5d436a58
+	at java.base@21.0.8/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.SynchronousQueue$Transferer@5d436a58
+	at java.base@21.0.8/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:410)
+	at java.base@21.0.8/java.util.concurrent.LinkedTransferQueue$DualNode.await(LinkedTransferQueue.java:452)
+	at java.base@21.0.8/java.util.concurrent.SynchronousQueue$Transferer.xferLifo(SynchronousQueue.java:194)
+	at java.base@21.0.8/java.util.concurrent.SynchronousQueue.xfer(SynchronousQueue.java:235)
+	at java.base@21.0.8/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:338)
+	at java.base@21.0.8/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1069)
+	at java.base@21.0.8/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base@21.0.8/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base@21.0.8/java.lang.Thread.runWith(Thread.java:1596)
+	at java.base@21.0.8/java.lang.Thread.run(Thread.java:1583)
+
+
+"Client shutdown watchdog" daemon prio=10 Id=106 RUNNABLE
+	at java.management@21.0.8/sun.management.ThreadImpl.dumpThreads0(Native Method)
+	at java.management@21.0.8/sun.management.ThreadImpl.dumpAllThreads(ThreadImpl.java:518)
+	at java.management@21.0.8/sun.management.ThreadImpl.dumpAllThreads(ThreadImpl.java:506)
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.server.dedicated.ServerWatchdog.createWatchdogCrashReport(ServerWatchdog.java:91)
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.server.dedicated.ServerWatchdog.createWatchdogCrashReport(ServerWatchdog.java:86)
+	at TRANSFORMER/minecraft@1.21.8/com.mojang.blaze3d.platform.ClientShutdownWatchdog.lambda$startShutdownWatchdog$0(ClientShutdownWatchdog.java:23)
+	at TRANSFORMER/minecraft@1.21.8/com.mojang.blaze3d.platform.ClientShutdownWatchdog$$Lambda/0x000001a01389d110.run(Unknown Source)
+	at java.base@21.0.8/java.lang.Thread.runWith(Thread.java:1596)
+	at java.base@21.0.8/java.lang.Thread.run(Thread.java:1583)
+
+
+"IO-Worker-18" prio=8 Id=107 TIMED_WAITING on java.util.concurrent.SynchronousQueue$Transferer@5d436a58
+	at java.base@21.0.8/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.SynchronousQueue$Transferer@5d436a58
+	at java.base@21.0.8/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:410)
+	at java.base@21.0.8/java.util.concurrent.LinkedTransferQueue$DualNode.await(LinkedTransferQueue.java:452)
+	at java.base@21.0.8/java.util.concurrent.SynchronousQueue$Transferer.xferLifo(SynchronousQueue.java:194)
+	at java.base@21.0.8/java.util.concurrent.SynchronousQueue.xfer(SynchronousQueue.java:235)
+	at java.base@21.0.8/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:338)
+	at java.base@21.0.8/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1069)
+	at java.base@21.0.8/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base@21.0.8/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base@21.0.8/java.lang.Thread.runWith(Thread.java:1596)
+	at java.base@21.0.8/java.lang.Thread.run(Thread.java:1583)
+
+
+"IO-Worker-19" prio=8 Id=108 TIMED_WAITING on java.util.concurrent.SynchronousQueue$Transferer@5d436a58
+	at java.base@21.0.8/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.SynchronousQueue$Transferer@5d436a58
+	at java.base@21.0.8/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:410)
+	at java.base@21.0.8/java.util.concurrent.LinkedTransferQueue$DualNode.await(LinkedTransferQueue.java:452)
+	at java.base@21.0.8/java.util.concurrent.SynchronousQueue$Transferer.xferLifo(SynchronousQueue.java:194)
+	at java.base@21.0.8/java.util.concurrent.SynchronousQueue.xfer(SynchronousQueue.java:235)
+	at java.base@21.0.8/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:338)
+	at java.base@21.0.8/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1069)
+	at java.base@21.0.8/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base@21.0.8/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base@21.0.8/java.lang.Thread.runWith(Thread.java:1596)
+	at java.base@21.0.8/java.lang.Thread.run(Thread.java:1583)
+
+
+
+Stacktrace:
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.server.dedicated.ServerWatchdog.createWatchdogCrashReport(ServerWatchdog.java:105) ~[neoforge-21.8.31.jar%23212!/:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.server.dedicated.ServerWatchdog.createWatchdogCrashReport(ServerWatchdog.java:86) ~[neoforge-21.8.31.jar%23212!/:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.8/com.mojang.blaze3d.platform.ClientShutdownWatchdog.lambda$startShutdownWatchdog$0(ClientShutdownWatchdog.java:23) ~[neoforge-21.8.31.jar%23212!/:?] {re:classloading}
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?] {}
+
+
+-- System Details --
+Details:
+	Minecraft Version: 1.21.8
+	Minecraft Version ID: 1.21.8
+	Operating System: Windows 11 (amd64) version 10.0
+	Java Version: 21.0.8, Eclipse Adoptium
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Eclipse Adoptium
+	Memory: 104820792 bytes (99 MiB) / 869269504 bytes (829 MiB) up to 2076180480 bytes (1980 MiB)
+	CPUs: 8
+	Processor Vendor: GenuineIntel
+	Processor Name: 12th Gen Intel(R) Core(TM) i3-1215U
+	Identifier: Intel64 Family 6 Model 154 Stepping 4
+	Microarchitecture: Alder Lake
+	Frequency (GHz): 2.50
+	Number of physical packages: 1
+	Number of physical CPUs: 6
+	Number of logical CPUs: 8
+	Graphics card #0 name: Intel(R) UHD Graphics
+	Graphics card #0 vendor: Intel Corporation
+	Graphics card #0 VRAM (MiB): 2048.00
+	Graphics card #0 deviceId: VideoController1
+	Graphics card #0 versionInfo: 32.0.101.7076
+	Memory slot #0 capacity (MiB): 8192.00
+	Memory slot #0 clockSpeed (GHz): 3.20
+	Memory slot #0 type: DDR4
+	Virtual memory max (MiB): 12268.49
+	Virtual memory used (MiB): 11773.26
+	Swap memory total (MiB): 4352.00
+	Swap memory used (MiB): 869.76
+	Space in storage for jna.tmpdir (MiB): <path not set>
+	Space in storage for org.lwjgl.system.SharedLibraryExtractPath (MiB): <path not set>
+	Space in storage for io.netty.native.workdir (MiB): <path not set>
+	Space in storage for java.io.tmpdir (MiB): available: 104461.10, total: 241921.00
+	Space in storage for workdir (MiB): available: 3271.41, total: 3839.03
+	JVM Flags: 0 total; 
+	ModLauncher: 9.0
+	ModLauncher launch target: neoforgeclientdev
+	ModLauncher services: 
+		sponge-mixin-0.15.2+mixin.0.8.7.jar mixin PLUGINSERVICE 
+		loader-9.0.16.jar neoforgedevdistcleaner PLUGINSERVICE 
+		loader-9.0.16.jar slf4jfixer PLUGINSERVICE 
+		loader-9.0.16.jar runtime_enum_extender PLUGINSERVICE 
+		loader-9.0.16.jar accesstransformer PLUGINSERVICE 
+		loader-9.0.16.jar mixin TRANSFORMATIONSERVICE 
+		loader-9.0.16.jar fml TRANSFORMATIONSERVICE 
+	FML Language Providers: 
+		javafml@9.0
+		minecraft@9.0
+	Mod List: 
+		main                                              |CustomOre                     |customore                     |1.0.0               |Manifest: NOSIGNATURE
+		neoforge-21.8.31.jar                              |Minecraft                     |minecraft                     |1.21.8              |Manifest: NOSIGNATURE
+		neoforge-21.8.31.jar                              |NeoForge                      |neoforge                      |21.8.31             |Manifest: NOSIGNATURE
+	Crash Report UUID: f96922b5-a0ed-4c7c-94cf-82f9b65a3f0e
+	FML: 9.0.16
+	NeoForge: 21.8.31

@@ -1,0 +1,12 @@
+/gamemode spectator
+/effect give @s minecraft:night_vision infinite 1 true
+/gamemode creative
+/gamemode spectator
+/gamemode survival
+/gamemode creative
+/gamemode survival
+/gamemode creative
+/gamemode survival
+/give @s minecraft:flint_and_steel
+/time
+/time set minecraft:noon

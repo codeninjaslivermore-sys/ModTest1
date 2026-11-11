@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "customore:block/christyllin_texture",
+    "particle": "customore:block/christyllin_texture"
+  }
+}

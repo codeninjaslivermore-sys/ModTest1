@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "customore:dirt_armor"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "customore:dirt_armor"
+      }
+    ]
+  }
+}

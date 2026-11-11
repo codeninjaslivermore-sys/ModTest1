@@ -1,0 +1,20 @@
+{
+  "_fv": 89,
+  "_type": "potion",
+  "definition": {
+    "potionName": "Potion of Potion Of Exploding",
+    "splashName": "Splash Potion of Potion Of Exploding",
+    "lingeringName": "Lingering Potion of Potion Of Exploding",
+    "arrowName": "Arrow of Potion Of Exploding",
+    "effects": [
+      {
+        "effect": "CUSTOM:CurseOfExploding",
+        "duration": 100,
+        "infinite": false,
+        "amplifier": 0,
+        "ambient": false,
+        "showParticles": false
+      }
+    ]
+  }
+}

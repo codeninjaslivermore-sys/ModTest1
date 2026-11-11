@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "customore:item/crystalline_pickaxe_texture"
+  }
+}

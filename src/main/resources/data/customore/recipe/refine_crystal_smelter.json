@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "experience": 20,
+  "cookingtime": 40,
+  "ingredient": "customore:raw_crystal",
+  "result": {
+    "id": "customore:refined_crystal"
+  }
+}

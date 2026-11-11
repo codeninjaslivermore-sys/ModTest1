@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "customore:item/raw_crystal_texture"
+  }
+}

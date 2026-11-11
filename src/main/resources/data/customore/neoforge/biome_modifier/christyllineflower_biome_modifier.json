@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "customore:crystal_biome",
+  "features": "customore:christyllineflower",
+  "step": "vegetal_decoration"
+}
