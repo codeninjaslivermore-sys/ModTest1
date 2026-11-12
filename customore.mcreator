@@ -153,26 +153,6 @@
       }
     },
     {
-      "name": "Oreblock",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "oreblock",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/customore/block/OreblockBlock.java",
-          "src/main/resources/data/customore/loot_table/blocks/oreblock.json",
-          "src/main/resources/assets/customore/items/oreblock.json",
-          "src/main/resources/data/customore/worldgen/configured_feature/oreblock.json",
-          "src/main/resources/assets/customore/blockstates/oreblock.json",
-          "src/main/resources/assets/customore/models/item/oreblock.json",
-          "src/main/resources/data/customore/neoforge/biome_modifier/oreblock_biome_modifier.json",
-          "src/main/resources/data/customore/worldgen/placed_feature/oreblock.json",
-          "src/main/resources/assets/customore/models/block/oreblock.json"
-        ]
-      }
-    },
-    {
       "name": "Kaboom",
       "type": "procedure",
       "compiles": true,
@@ -359,6 +339,57 @@
           "src/main/resources/data/customore/worldgen/biome/crystal_biome.json"
         ]
       }
+    },
+    {
+      "name": "RawOreBlock",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raw_ore_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/customore/recipe/raw_ore_block.json",
+          "src/main/resources/data/customore/advancement/recipes/raw_ore_block.json"
+        ]
+      }
+    },
+    {
+      "name": "RawOre",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raw_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/customore/recipe/raw_ore.json"
+        ]
+      }
+    },
+    {
+      "name": "CrystalPickRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystal_pick_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/customore/recipe/crystal_pick_recipe.json",
+          "src/main/resources/data/customore/advancement/recipes/crystal_pick_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "CrystalAxeRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystal_axe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/customore/advancement/recipes/crystal_axe_recipe.json",
+          "src/main/resources/data/customore/recipe/crystal_axe_recipe.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -424,7 +455,6 @@
       "item.customore.crystalline_pickaxe": "Crystalline Pickaxe",
       "item.customore.crystalline_axe": "Crystalline Axe",
       "item.customore.raw_crystal_block": "Raw Crystal Block",
-      "item.customore.oreblock": "Oreblock",
       "effect.customore.curse_of_exploding": "Curse Of Exploding",
       "item.minecraft.lingering_potion.effect.potion_of_exploding": "Lingering Potion of Potion Of Exploding",
       "item.minecraft.potion.effect.potion_of_exploding": "Potion of Potion Of Exploding",

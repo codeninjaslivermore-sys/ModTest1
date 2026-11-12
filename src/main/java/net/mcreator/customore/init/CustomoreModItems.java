@@ -28,7 +28,6 @@ public class CustomoreModItems {
 	public static final DeferredItem<Item> CRYSTALLINE_PICKAXE;
 	public static final DeferredItem<Item> CRYSTALLINE_AXE;
 	public static final DeferredItem<Item> RAW_CRYSTAL_BLOCK;
-	public static final DeferredItem<Item> OREBLOCK;
 	public static final DeferredItem<Item> DIRT_ARMOR_HELMET;
 	public static final DeferredItem<Item> DIRT_ARMOR_CHESTPLATE;
 	public static final DeferredItem<Item> DIRT_ARMOR_LEGGINGS;
@@ -45,7 +44,6 @@ public class CustomoreModItems {
 		CRYSTALLINE_PICKAXE = register("crystalline_pickaxe", CrystallinePickaxeItem::new);
 		CRYSTALLINE_AXE = register("crystalline_axe", CrystallineAxeItem::new);
 		RAW_CRYSTAL_BLOCK = block(CustomoreModBlocks.RAW_CRYSTAL_BLOCK);
-		OREBLOCK = block(CustomoreModBlocks.OREBLOCK);
 		DIRT_ARMOR_HELMET = register("dirt_armor_helmet", DirtArmorItem.Helmet::new);
 		DIRT_ARMOR_CHESTPLATE = register("dirt_armor_chestplate", DirtArmorItem.Chestplate::new);
 		DIRT_ARMOR_LEGGINGS = register("dirt_armor_leggings", DirtArmorItem.Leggings::new);

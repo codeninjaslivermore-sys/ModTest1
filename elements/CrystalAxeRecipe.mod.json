@@ -1,0 +1,31 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [
+      "CUSTOM:RefinedCrystal"
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "EQUIPMENT",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      "",
+      "CUSTOM:RefinedCrystal",
+      "CUSTOM:RefinedCrystal",
+      "",
+      "Items.STICK",
+      "CUSTOM:RefinedCrystal",
+      "",
+      "Items.STICK",
+      ""
+    ],
+    "recipeReturnStack": "CUSTOM:CrystallineAxe",
+    "name": "crystal_axe_recipe",
+    "namespace": "mod"
+  }
+}

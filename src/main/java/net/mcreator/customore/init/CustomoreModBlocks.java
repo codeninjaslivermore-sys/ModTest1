@@ -10,7 +10,6 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.Block;
 
 import net.mcreator.customore.block.RawCrystalBlockBlock;
-import net.mcreator.customore.block.OreblockBlock;
 import net.mcreator.customore.block.CrystalOreBlock;
 import net.mcreator.customore.block.ChristyllineflowerBlock;
 import net.mcreator.customore.CustomoreMod;
@@ -21,12 +20,10 @@ public class CustomoreModBlocks {
 	public static final DeferredRegister.Blocks REGISTRY = DeferredRegister.createBlocks(CustomoreMod.MODID);
 	public static final DeferredBlock<Block> CRYSTAL_ORE;
 	public static final DeferredBlock<Block> RAW_CRYSTAL_BLOCK;
-	public static final DeferredBlock<Block> OREBLOCK;
 	public static final DeferredBlock<Block> CHRISTYLLINEFLOWER;
 	static {
 		CRYSTAL_ORE = register("crystal_ore", CrystalOreBlock::new);
 		RAW_CRYSTAL_BLOCK = register("raw_crystal_block", RawCrystalBlockBlock::new);
-		OREBLOCK = register("oreblock", OreblockBlock::new);
 		CHRISTYLLINEFLOWER = register("christyllineflower", ChristyllineflowerBlock::new);
 	}
 

@@ -1,0 +1,480 @@
+{
+  "mod_elements": [
+    {
+      "name": "RawCrystal",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raw_crystal",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/customore/items/raw_crystal.json",
+          "src/main/java/net/mcreator/customore/item/RawCrystalItem.java",
+          "src/main/resources/assets/customore/models/item/raw_crystal.json"
+        ]
+      }
+    },
+    {
+      "name": "CrystalOreLoot",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystal_ore_loot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/customore/loot_table/blocks/crystal_ore.json"
+        ]
+      }
+    },
+    {
+      "name": "CrystalOre",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystal_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/customore/neoforge/biome_modifier/crystal_ore_biome_modifier.json",
+          "src/main/resources/data/customore/worldgen/placed_feature/crystal_ore.json",
+          "src/main/resources/assets/customore/blockstates/crystal_ore.json",
+          "src/main/resources/assets/customore/items/crystal_ore.json",
+          "src/main/resources/data/customore/worldgen/configured_feature/crystal_ore.json",
+          "src/main/resources/assets/customore/models/block/crystal_ore.json",
+          "src/main/java/net/mcreator/customore/block/CrystalOreBlock.java",
+          "src/main/resources/assets/customore/models/item/crystal_ore.json"
+        ]
+      }
+    },
+    {
+      "name": "RefinedCrystal",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "refined_crystal",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/customore/items/refined_crystal.json",
+          "src/main/java/net/mcreator/customore/item/RefinedCrystalItem.java",
+          "src/main/resources/assets/customore/models/item/refined_crystal.json"
+        ]
+      }
+    },
+    {
+      "name": "RefineCrystalSmelter",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "refine_crystal_smelter",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/customore/advancement/recipes/refine_crystal_smelter.json",
+          "src/main/resources/data/customore/recipe/refine_crystal_smelter.json"
+        ]
+      }
+    },
+    {
+      "name": "RefineCrystalBlaster",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "refine_crystal_blaster",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/customore/advancement/recipes/refine_crystal_blaster.json",
+          "src/main/resources/data/customore/recipe/refine_crystal_blaster.json"
+        ]
+      }
+    },
+    {
+      "name": "CrystalArmor",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystal_armor",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/customore/models/item/crystal_armor_boots.json",
+          "src/main/java/net/mcreator/customore/item/CrystalArmorItem.java",
+          "src/main/resources/assets/customore/models/item/crystal_armor_chestplate.json",
+          "src/main/java/net/mcreator/customore/client/renderer/item/CrystalArmorArmor.java",
+          "src/main/resources/assets/customore/models/item/crystal_armor_helmet.json",
+          "src/main/resources/assets/customore/items/crystal_armor_leggings.json",
+          "src/main/resources/assets/customore/items/crystal_armor_helmet.json",
+          "src/main/resources/assets/customore/items/crystal_armor_chestplate.json",
+          "src/main/resources/assets/customore/items/crystal_armor_boots.json",
+          "src/main/resources/assets/customore/models/item/crystal_armor_leggings.json",
+          "src/main/resources/assets/customore/equipment/crystal_armor.json"
+        ]
+      }
+    },
+    {
+      "name": "CrystallinePickaxe",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystalline_pickaxe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/customore/item/CrystallinePickaxeItem.java",
+          "src/main/resources/assets/customore/items/crystalline_pickaxe.json",
+          "src/main/resources/assets/customore/models/item/crystalline_pickaxe.json"
+        ]
+      }
+    },
+    {
+      "name": "CrystallineAxe",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystalline_axe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/customore/models/item/crystalline_axe.json",
+          "src/main/resources/assets/customore/items/crystalline_axe.json",
+          "src/main/java/net/mcreator/customore/item/CrystallineAxeItem.java"
+        ]
+      }
+    },
+    {
+      "name": "RawCrystalBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raw_crystal_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/customore/loot_table/blocks/raw_crystal_block.json",
+          "src/main/java/net/mcreator/customore/block/RawCrystalBlockBlock.java",
+          "src/main/resources/assets/customore/items/raw_crystal_block.json",
+          "src/main/resources/assets/customore/models/item/raw_crystal_block.json",
+          "src/main/resources/assets/customore/blockstates/raw_crystal_block.json",
+          "src/main/resources/assets/customore/models/block/raw_crystal_block.json"
+        ]
+      }
+    },
+    {
+      "name": "Oreblock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oreblock",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/customore/block/OreblockBlock.java",
+          "src/main/resources/data/customore/loot_table/blocks/oreblock.json",
+          "src/main/resources/assets/customore/items/oreblock.json",
+          "src/main/resources/data/customore/worldgen/configured_feature/oreblock.json",
+          "src/main/resources/assets/customore/blockstates/oreblock.json",
+          "src/main/resources/assets/customore/models/item/oreblock.json",
+          "src/main/resources/data/customore/neoforge/biome_modifier/oreblock_biome_modifier.json",
+          "src/main/resources/data/customore/worldgen/placed_feature/oreblock.json",
+          "src/main/resources/assets/customore/models/block/oreblock.json"
+        ]
+      }
+    },
+    {
+      "name": "Kaboom",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kaboom",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/customore/procedures/KaboomProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "CurseOfExploding",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "curse_of_exploding",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/customore/potion/CurseOfExplodingMobEffect.java"
+        ]
+      }
+    },
+    {
+      "name": "PotionOfExploding",
+      "type": "potion",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "potion_of_exploding",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "CurseExpode",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "curse_expode",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/customore/procedures/CurseExpodeProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "ElectricStrike",
+      "type": "enchantment",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "electric_strike",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/customore/enchantment/electric_strike.json"
+        ]
+      }
+    },
+    {
+      "name": "ElectifyingProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "electifying_procedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/customore/procedures/ElectifyingProcedureProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "DirtArmor",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dirt_armor",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/customore/items/dirt_armor_boots.json",
+          "src/main/resources/assets/customore/models/item/dirt_armor_chestplate.json",
+          "src/main/resources/assets/customore/items/dirt_armor_helmet.json",
+          "src/main/resources/assets/customore/models/item/dirt_armor_boots.json",
+          "src/main/resources/assets/customore/items/dirt_armor_chestplate.json",
+          "src/main/java/net/mcreator/customore/item/DirtArmorItem.java",
+          "src/main/resources/assets/customore/equipment/dirt_armor.json",
+          "src/main/resources/assets/customore/models/item/dirt_armor_leggings.json",
+          "src/main/java/net/mcreator/customore/client/renderer/item/DirtArmorArmor.java",
+          "src/main/resources/assets/customore/items/dirt_armor_leggings.json",
+          "src/main/resources/assets/customore/models/item/dirt_armor_helmet.json"
+        ]
+      }
+    },
+    {
+      "name": "Christyllineflower",
+      "type": "plant",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "christyllineflower",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/customore/worldgen/configured_feature/christyllineflower.json",
+          "src/main/resources/data/customore/worldgen/placed_feature/christyllineflower.json",
+          "src/main/resources/assets/customore/blockstates/christyllineflower.json",
+          "src/main/resources/assets/customore/models/item/christyllineflower.json",
+          "src/main/java/net/mcreator/customore/block/ChristyllineflowerBlock.java",
+          "src/main/resources/assets/customore/items/christyllineflower.json",
+          "src/main/resources/assets/customore/models/block/christyllineflower.json",
+          "src/main/resources/data/customore/neoforge/biome_modifier/christyllineflower_biome_modifier.json",
+          "src/main/resources/data/customore/loot_table/blocks/christyllineflower.json"
+        ]
+      }
+    },
+    {
+      "name": "CrystalBiome",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystal_biome",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/customore/worldgen/configured_feature/crystal_biome_tree.json",
+          "src/main/resources/data/customore/worldgen/placed_feature/crystal_biome_tree.json",
+          "src/main/resources/data/customore/worldgen/biome/crystal_biome.json"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "tag_elements": {
+    "ITEMS:customore:crystal_armor_repair_items": [
+      "~CrystalArmor@CUSTOM:RefinedCrystal"
+    ],
+    "ITEMS:customore:crystalline_pickaxe_repair_items": [
+      "~CrystallinePickaxe@CUSTOM:RefinedCrystal"
+    ],
+    "ITEMS:customore:crystalline_axe_repair_items": [
+      "~CrystallineAxe@CUSTOM:RefinedCrystal"
+    ],
+    "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CrystalOre@CUSTOM:CrystalOre"
+    ],
+    "BLOCKS:minecraft:needs_diamond_tool": [
+      "~CrystalOre@CUSTOM:CrystalOre"
+    ],
+    "ITEMS:minecraft:head_armor": [
+      "~DirtArmor@CUSTOM:DirtArmor.helmet",
+      "~CrystalArmor@CUSTOM:CrystalArmor.helmet"
+    ],
+    "ITEMS:minecraft:chest_armor": [
+      "~DirtArmor@CUSTOM:DirtArmor.body",
+      "~CrystalArmor@CUSTOM:CrystalArmor.body"
+    ],
+    "ITEMS:minecraft:leg_armor": [
+      "~DirtArmor@CUSTOM:DirtArmor.legs",
+      "~CrystalArmor@CUSTOM:CrystalArmor.legs"
+    ],
+    "ITEMS:minecraft:foot_armor": [
+      "~DirtArmor@CUSTOM:DirtArmor.boots",
+      "~CrystalArmor@CUSTOM:CrystalArmor.boots"
+    ],
+    "ITEMS:minecraft:pickaxes": [
+      "~CrystallinePickaxe@CUSTOM:CrystallinePickaxe"
+    ],
+    "ITEMS:minecraft:axes": [
+      "~CrystallineAxe@CUSTOM:CrystallineAxe"
+    ],
+    "ENCHANTMENTS:minecraft:tradeable": [
+      "~ElectricStrike@CUSTOM:ElectricStrike"
+    ],
+    "ENCHANTMENTS:minecraft:on_random_loot": [
+      "~ElectricStrike@CUSTOM:ElectricStrike"
+    ],
+    "ENCHANTMENTS:minecraft:non_treasure": [
+      "~ElectricStrike@CUSTOM:ElectricStrike"
+    ]
+  },
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "item.customore.raw_crystal": "Raw Crystal",
+      "item.customore.crystal_ore": "Crystal Ore",
+      "item.customore.refined_crystal": "Refined Crystal",
+      "item.customore.crystal_armor_helmet": "Crystal Armor Helmet",
+      "item.customore.crystal_armor_boots": "Crystal Armor Boots",
+      "item.customore.crystal_armor_leggings": "Crystal Armor Leggings",
+      "item.customore.crystal_armor_chestplate": "Crystal Armor Chestplate",
+      "item.customore.crystalline_pickaxe": "Crystalline Pickaxe",
+      "item.customore.crystalline_axe": "Crystalline Axe",
+      "item.customore.raw_crystal_block": "Raw Crystal Block",
+      "item.customore.oreblock": "Oreblock",
+      "effect.customore.curse_of_exploding": "Curse Of Exploding",
+      "item.minecraft.lingering_potion.effect.potion_of_exploding": "Lingering Potion of Potion Of Exploding",
+      "item.minecraft.potion.effect.potion_of_exploding": "Potion of Potion Of Exploding",
+      "item.minecraft.splash_potion.effect.potion_of_exploding": "Splash Potion of Potion Of Exploding",
+      "item.minecraft.tipped_arrow.effect.potion_of_exploding": "Arrow of Potion Of Exploding",
+      "enchantment.customore.electric_strike": "Electric Strike",
+      "item.customore.dirt_armor_helmet": "Dirt Helmet",
+      "item.customore.dirt_armor_chestplate": "Dirt Chestplate",
+      "item.customore.dirt_armor_leggings": "Dirt Leggings",
+      "item.customore.dirt_armor_boots": "Dirt Boots",
+      "biome.customore.crystal_biome": "Crystal Biome",
+      "item.customore.christyllineflower": "Christyllineflower"
+    }
+  },
+  "metadata": {
+    "files": [
+      "src/main/java/net/mcreator/customore/mixin/BiomeSourcePresetMixin.java",
+      "src/main/java/net/mcreator/customore/mixin/LevelStorageSourceMixin.java",
+      "src/main/java/net/mcreator/customore/mixin/NoiseGeneratorSettingsMixin.java",
+      "src/main/java/net/mcreator/customore/init/CustomoreModBiomes.java",
+      "src/main/java/net/mcreator/customore/init/CustomoreModMobEffects.java",
+      "src/main/java/net/mcreator/customore/init/CustomoreModPotions.java",
+      "src/main/java/net/mcreator/customore/init/CustomoreModBlocks.java",
+      "src/main/java/net/mcreator/customore/init/CustomoreModItems.java",
+      "src/main/resources/customore.mixins.json",
+      "src/main/resources/META-INF/accesstransformer.cfg",
+      "src/main/resources/pack.mcmeta",
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/java/net/mcreator/customore/CustomoreMod.java",
+      "src/main/java/net/mcreator/customore/init/CustomoreModTabs.java"
+    ]
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "customore",
+    "modName": "CustomOre",
+    "version": "1.0.0",
+    "author": "MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "neoforge-26.1.2",
+    "modElementsPackage": "net.mcreator.customore"
+  },
+  "mcreatorVersion": 202600233518
+}

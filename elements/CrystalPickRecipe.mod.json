@@ -1,0 +1,31 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [
+      "CUSTOM:RefinedCrystal"
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "EQUIPMENT",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      "CUSTOM:RefinedCrystal",
+      "CUSTOM:RefinedCrystal",
+      "CUSTOM:RefinedCrystal",
+      "",
+      "Items.STICK",
+      "",
+      "",
+      "Items.STICK",
+      ""
+    ],
+    "recipeReturnStack": "CUSTOM:CrystallinePickaxe",
+    "name": "crystal_pick_recipe",
+    "namespace": "mod"
+  }
+}

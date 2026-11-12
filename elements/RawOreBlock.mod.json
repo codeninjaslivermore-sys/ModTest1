@@ -1,0 +1,31 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [
+      "CUSTOM:RawCrystal"
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      "CUSTOM:RawCrystal",
+      "CUSTOM:RawCrystal",
+      "CUSTOM:RawCrystal",
+      "CUSTOM:RawCrystal",
+      "CUSTOM:RawCrystal",
+      "CUSTOM:RawCrystal",
+      "CUSTOM:RawCrystal",
+      "CUSTOM:RawCrystal",
+      "CUSTOM:RawCrystal"
+    ],
+    "recipeReturnStack": "CUSTOM:RawCrystalBlock",
+    "name": "raw_ore_block",
+    "namespace": "mod"
+  }
+}
