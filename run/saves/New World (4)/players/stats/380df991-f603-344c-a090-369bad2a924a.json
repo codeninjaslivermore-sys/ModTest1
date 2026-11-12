@@ -1,0 +1,30 @@
+{
+  "stats": {
+    "minecraft:used": {
+      "minecraft:amethyst_block": 1,
+      "customore:crystal_armor_chestplate": 1,
+      "customore:christyllineflower": 11
+    },
+    "minecraft:dropped": {
+      "customore:christyllineflower": 1
+    },
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 18210,
+      "minecraft:walk_one_cm": 9019,
+      "minecraft:leave_game": 1,
+      "minecraft:walk_under_water_one_cm": 1158,
+      "minecraft:play_time": 9105,
+      "minecraft:jump": 53,
+      "minecraft:time_since_death": 9105,
+      "minecraft:drop": 1,
+      "minecraft:sprint_one_cm": 6714,
+      "minecraft:swim_one_cm": 4584,
+      "minecraft:total_world_time": 9131,
+      "minecraft:fly_one_cm": 133317,
+      "minecraft:walk_on_water_one_cm": 985,
+      "minecraft:crouch_one_cm": 94,
+      "minecraft:sneak_time": 65
+    }
+  },
+  "DataVersion": 4790
+}

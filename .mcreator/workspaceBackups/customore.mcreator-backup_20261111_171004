@@ -143,11 +143,11 @@
       "registry_name": "raw_crystal_block",
       "metadata": {
         "files": [
-          "src/main/resources/assets/customore/models/item/raw_crystal_block.json",
-          "src/main/resources/assets/customore/items/raw_crystal_block.json",
-          "src/main/resources/assets/customore/blockstates/raw_crystal_block.json",
-          "src/main/java/net/mcreator/customore/block/RawCrystalBlockBlock.java",
           "src/main/resources/data/customore/loot_table/blocks/raw_crystal_block.json",
+          "src/main/java/net/mcreator/customore/block/RawCrystalBlockBlock.java",
+          "src/main/resources/assets/customore/items/raw_crystal_block.json",
+          "src/main/resources/assets/customore/models/item/raw_crystal_block.json",
+          "src/main/resources/assets/customore/blockstates/raw_crystal_block.json",
           "src/main/resources/assets/customore/models/block/raw_crystal_block.json"
         ]
       }
@@ -325,56 +325,90 @@
           "src/main/resources/assets/customore/models/item/dirt_armor_helmet.json"
         ]
       }
+    },
+    {
+      "name": "Christyllineflower",
+      "type": "plant",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "christyllineflower",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/customore/worldgen/configured_feature/christyllineflower.json",
+          "src/main/resources/data/customore/worldgen/placed_feature/christyllineflower.json",
+          "src/main/resources/assets/customore/blockstates/christyllineflower.json",
+          "src/main/resources/assets/customore/models/item/christyllineflower.json",
+          "src/main/java/net/mcreator/customore/block/ChristyllineflowerBlock.java",
+          "src/main/resources/assets/customore/items/christyllineflower.json",
+          "src/main/resources/assets/customore/models/block/christyllineflower.json",
+          "src/main/resources/data/customore/neoforge/biome_modifier/christyllineflower_biome_modifier.json",
+          "src/main/resources/data/customore/loot_table/blocks/christyllineflower.json"
+        ]
+      }
+    },
+    {
+      "name": "CrystalBiome",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystal_biome",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/customore/worldgen/configured_feature/crystal_biome_tree.json",
+          "src/main/resources/data/customore/worldgen/placed_feature/crystal_biome_tree.json",
+          "src/main/resources/data/customore/worldgen/biome/crystal_biome.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "tag_elements": {
-    "BLOCKS:minecraft:mineable/pickaxe": [
-      "~CUSTOM:CrystalOre"
-    ],
-    "BLOCKS:minecraft:needs_diamond_tool": [
-      "~CUSTOM:CrystalOre"
-    ],
-    "ITEMS:minecraft:head_armor": [
-      "~CUSTOM:DirtArmor.helmet",
-      "~CUSTOM:CrystalArmor.helmet"
-    ],
-    "ITEMS:minecraft:chest_armor": [
-      "~CUSTOM:DirtArmor.body",
-      "~CUSTOM:CrystalArmor.body"
-    ],
-    "ITEMS:minecraft:leg_armor": [
-      "~CUSTOM:DirtArmor.legs",
-      "~CUSTOM:CrystalArmor.legs"
-    ],
-    "ITEMS:minecraft:foot_armor": [
-      "~CUSTOM:DirtArmor.boots",
-      "~CUSTOM:CrystalArmor.boots"
-    ],
     "ITEMS:customore:crystal_armor_repair_items": [
-      "~CUSTOM:RefinedCrystal"
-    ],
-    "ITEMS:minecraft:pickaxes": [
-      "~CUSTOM:CrystallinePickaxe"
+      "~CrystalArmor@CUSTOM:RefinedCrystal"
     ],
     "ITEMS:customore:crystalline_pickaxe_repair_items": [
-      "~CUSTOM:RefinedCrystal"
-    ],
-    "ITEMS:minecraft:axes": [
-      "~CUSTOM:CrystallineAxe"
+      "~CrystallinePickaxe@CUSTOM:RefinedCrystal"
     ],
     "ITEMS:customore:crystalline_axe_repair_items": [
-      "~CUSTOM:RefinedCrystal"
+      "~CrystallineAxe@CUSTOM:RefinedCrystal"
+    ],
+    "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CrystalOre@CUSTOM:CrystalOre"
+    ],
+    "BLOCKS:minecraft:needs_diamond_tool": [
+      "~CrystalOre@CUSTOM:CrystalOre"
+    ],
+    "ITEMS:minecraft:head_armor": [
+      "~DirtArmor@CUSTOM:DirtArmor.helmet",
+      "~CrystalArmor@CUSTOM:CrystalArmor.helmet"
+    ],
+    "ITEMS:minecraft:chest_armor": [
+      "~DirtArmor@CUSTOM:DirtArmor.body",
+      "~CrystalArmor@CUSTOM:CrystalArmor.body"
+    ],
+    "ITEMS:minecraft:leg_armor": [
+      "~DirtArmor@CUSTOM:DirtArmor.legs",
+      "~CrystalArmor@CUSTOM:CrystalArmor.legs"
+    ],
+    "ITEMS:minecraft:foot_armor": [
+      "~DirtArmor@CUSTOM:DirtArmor.boots",
+      "~CrystalArmor@CUSTOM:CrystalArmor.boots"
+    ],
+    "ITEMS:minecraft:pickaxes": [
+      "~CrystallinePickaxe@CUSTOM:CrystallinePickaxe"
+    ],
+    "ITEMS:minecraft:axes": [
+      "~CrystallineAxe@CUSTOM:CrystallineAxe"
     ],
     "ENCHANTMENTS:minecraft:tradeable": [
-      "~CUSTOM:ElectricStrike"
+      "~ElectricStrike@CUSTOM:ElectricStrike"
     ],
     "ENCHANTMENTS:minecraft:on_random_loot": [
-      "~CUSTOM:ElectricStrike"
+      "~ElectricStrike@CUSTOM:ElectricStrike"
     ],
     "ENCHANTMENTS:minecraft:non_treasure": [
-      "~CUSTOM:ElectricStrike"
+      "~ElectricStrike@CUSTOM:ElectricStrike"
     ]
   },
   "tab_element_order": {},
@@ -400,18 +434,26 @@
       "item.customore.dirt_armor_helmet": "Dirt Helmet",
       "item.customore.dirt_armor_chestplate": "Dirt Chestplate",
       "item.customore.dirt_armor_leggings": "Dirt Leggings",
-      "item.customore.dirt_armor_boots": "Dirt Boots"
+      "item.customore.dirt_armor_boots": "Dirt Boots",
+      "biome.customore.crystal_biome": "Crystal Biome",
+      "item.customore.christyllineflower": "Christyllineflower"
     }
   },
   "metadata": {
     "files": [
+      "src/main/java/net/mcreator/customore/mixin/BiomeSourcePresetMixin.java",
+      "src/main/java/net/mcreator/customore/mixin/LevelStorageSourceMixin.java",
+      "src/main/java/net/mcreator/customore/mixin/NoiseGeneratorSettingsMixin.java",
+      "src/main/java/net/mcreator/customore/init/CustomoreModBiomes.java",
       "src/main/java/net/mcreator/customore/init/CustomoreModMobEffects.java",
       "src/main/java/net/mcreator/customore/init/CustomoreModPotions.java",
       "src/main/java/net/mcreator/customore/init/CustomoreModBlocks.java",
       "src/main/java/net/mcreator/customore/init/CustomoreModItems.java",
+      "src/main/resources/customore.mixins.json",
+      "src/main/resources/META-INF/accesstransformer.cfg",
       "src/main/resources/pack.mcmeta",
-      "src/main/java/net/mcreator/customore/CustomoreMod.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/java/net/mcreator/customore/CustomoreMod.java",
       "src/main/java/net/mcreator/customore/init/CustomoreModTabs.java"
     ]
   },
@@ -431,8 +473,8 @@
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [],
-    "currentGenerator": "neoforge-1.21.8",
+    "currentGenerator": "neoforge-26.1.2",
     "modElementsPackage": "net.mcreator.customore"
   },
-  "mcreatorVersion": 202500345720
+  "mcreatorVersion": 202600233518
 }
